@@ -1,7 +1,5 @@
-# lectures
-This directory contains materials for class to include some examples.
+# Lectures
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anyl580/lectures/master)
+This directory contains lecture materials for class which can be viewed either directly in GitHub or launched on Binder.
 
-.. image:: https://mybinder.org/badge_logo.svg
- :target: https://mybinder.org/v2/gh/anyl580/lectures/master
+Launch repository on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anyl580/lectures/master)
