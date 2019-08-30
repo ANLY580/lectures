@@ -14,5 +14,3 @@ dependencies:
     - pip:
         - cite2c
         - nltk
-        - matlabplot
-        - ipwidgets
