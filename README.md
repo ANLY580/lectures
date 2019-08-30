@@ -2,9 +2,7 @@
 
 This directory contains lecture materials for class which can be viewed either directly in GitHub, nbviewer or launched interactively on Binder.
 
-[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/anyl580/lectures/blob/master/1-overview/1-overview.ipynb)
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anyl580/lectures/master)
+[![nbviewer](https://img.shields.io/badge/render-nbviewer-orange.svg)](https://nbviewer.jupyter.org/github/anyl580/lectures/blob/master/1-overview/1-overview.ipynb) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/anyl580/lectures/master)
 
 ## Try out the notebooks!
 
