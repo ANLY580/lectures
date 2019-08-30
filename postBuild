@@ -1,0 +1,11 @@
+set -ex
+
+jupyter nbextensions_configurator enable --user
+jupyter contrib nbextension install --user
+jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension enable python-markdown/main
+
+python -m cite2c.install
+python -m nltk.downloader all
+
+jupyter trust 1-overview.ipynb

@@ -1,0 +1,18 @@
+name: lecture-env
+channels:
+    - conda-forge
+dependencies:
+    - python
+    - numpy
+    - jupyter
+    - jupytext
+    - rise
+    - jupyter_contrib_nbextensions
+    - jupyter_nbextensions_configurator
+    - pandas
+    - nbconvert
+    - matlabplot
+    - ipwidgets
+    - pip:
+        - cite2c
+        - nltk
