@@ -11,8 +11,8 @@ dependencies:
     - jupyter_nbextensions_configurator
     - pandas
     - nbconvert
-    - matlabplot
-    - ipwidgets
     - pip:
         - cite2c
         - nltk
+        - matlabplot
+        - ipwidgets
