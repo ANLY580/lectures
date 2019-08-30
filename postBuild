@@ -6,6 +6,6 @@ jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable python-markdown/main
 
 python -m cite2c.install
-python -m nltk.downloader all
+python -m nltk.downloader brown
 
-jupyter trust 1-overview.ipynb
+jupyter trust 1-overview/1-overview.ipynb
