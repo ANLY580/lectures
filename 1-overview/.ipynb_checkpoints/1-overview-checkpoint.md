@@ -55,7 +55,6 @@ If you haven't yet filled out the questionnaire, please go to canvas to get the 
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Image credit: http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
-
 What is domain expertise?
 For NLP this can mean:
 - Domain expertise in linguistics
@@ -182,9 +181,7 @@ Example, "He saw the girl with the telescope.""
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-Image credit: Christopher Manning 2017. 
-
-For more about this talk, visit https://simons.berkeley.edu/talks/christopher-manning-2017-3-27 or watch directly in YouTube at https://youtu.be/nFCxTtBqF5U.
+Image credit: Christopher Manning 2017. For more about this talk, visit https://simons.berkeley.edu/talks/christopher-manning-2017-3-27 or watch directly in YouTube at https://youtu.be/nFCxTtBqF5U.
 
 As Christopher Manning and others have noted, symbols are not only categorical in nature, but continuous! And, in fact, the brain encodes information in a continuous pattern of activation. Deep Learning methods take advantage of this dual-natured representational system.
 
@@ -194,19 +191,18 @@ Though Manning notes particularly sound, gesture, and writing as perceptually co
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Symbolic to Distributed
 ![](../images/distributed-representations.jpg)
+You shall know a word by the company it keeps (Firth, J. R. 1957:11)
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Image from: https://nlp.stanford.edu/manning/talks/Simons-Institute-Manning-2017.pdf
-
 A key idea from distributional semantics has had tremendous impact on modern methods in language processing. The distributional hypothesis posits linguistic items with similar distributions have similar meanings.
 
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Language is Social
-
-<img src="../images/social.jpg" style="width: 400px;">
+![](../images/social.jpg)
 <!-- #endregion -->
 
 
@@ -248,7 +244,6 @@ We'll talk about dialog in the last class of this course. If anything, we may pr
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Image source (screen shot): https://corpling.uis.georgetown.edu/rstweb/info/
-
 In some sense, the structure in written language is more obvious.
 
 The image on the left is an academic paper. The structure is conventionalized and familiar. Easily recognizable are document title, headers, authors. etc. Slightly less obvious sorts of chunking are paragraph sections, sentences, footnotes, and abbreviations. These conventions are learned.
@@ -377,7 +372,7 @@ Domain expertise is still critical for developing and tuning very good models. T
 Image credit: https://towardsdatascience.com/is-data-science-really-a-science-9c2249ee2ce4
 
 What is data science without science?
-You could characterize data exploration as a part of data engineering. But data science is not just the extraction of knowledge from data nor data exploration.
+You could characterize data exploration as a part of data engineering. As the article referenced above notes, data science is not just the extraction of knowledge from data nor data exploration.
 
 So why is “science” in data science so important?
 Much of what you are doing in NLP involves prediction. To produce meaningful results, we use empirical methods to validate the output of algorithms and models, since we can’t always determine validity through direct inspection of every bit of data.
@@ -435,7 +430,7 @@ We're going to go through SpaCy tutorials later in the class and you will be bui
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-Your reading on "What is a word" (Grefenstette & Tapanainen, 1994) focuses on the practical challenge of tokenizing text - it raises a basic question about how to break apart text into discrete units *using surface (or orthographic) form.* If this is not so straightforward in English, imagine how challenging it must be with languages that do not use conventions such as whitespace.
+Your reading on "What is a word" (Grefenstette & Tapanainen, 1994) focuses on the practical challenge of tokenizing text - it raises a basic question about how to break apart text into discrete units *using surface (or orthographic) form.*
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
@@ -457,14 +452,6 @@ The question of "what is a word" is fundamental to text processing. There is no 
 
 ```python slideshow={"slide_type": "slide"}
 # Code
-import nltk
-from nltk.corpus import brown
-#from nltk.text import Text
-
-brown_words = brown.words()
-print(len(brown_words))
-      
-# Some things to try...
 
 # How large is the total vocabulary?
 # What is the relative frequency of the word "the"?
@@ -479,8 +466,7 @@ print(len(brown_words))
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Image credit: http://jalammar.github.io/illustrated-word2vec/
-
-In "Contextual word representations" (Noah Smith, 2019) goes further to talk about how we can represent words in a useful way from a computational perspective and to support downstream NLP tasks. Intuitively, we'd like to be able to use surface attributes to relate similar word types, but we'd also relate those that have similar meanings or share other characteristics but are not similar orthographically.
+"Contextual word representations" (Noah Smith, 2019) goes further to talk about how we can represent words in a useful way from a computational perspective and to support downstream NLP tasks. Intuitively, we'd like to be able to use surface attributes to relate similar word types, but we'd also relate those that have similar meanings or share other characteristics but are not similar orthographically.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -490,7 +476,6 @@ In "Contextual word representations" (Noah Smith, 2019) goes further to talk abo
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Image credit: http://jalammar.github.io/illustrated-bert/
-
 "Contextualized word-embeddings can give words different embeddings based on the meaning they carry in the context of the sentence."  Jay Alammar
 
 Elmo word embeddings look at the entire sentence.
@@ -504,13 +489,12 @@ Elmo word embeddings look at the entire sentence.
 
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-Image credit: [Zellers et al. 2018](https://arxiv.org/abs/1811.10830)
-
+Image credit: [Zellers et al. 2018](Zellers et al., 2018)
 To understand language requires making inferences about what is meant. And, in fact, you do all sorts of inferencing without even realizing it.
 
 For example, in the previous sentence you had to make sense of the meaning of the word "it" . If asked, you would probably say "it" refers to "you doing all sorts of inferencing". Language processing is concerned with more complex tasks around  how they combine syntactactically, semantically, and pragmatically. This will matter a great deal for tasks such as question-answering and dialog interaction.
 
-Check out this 10-minute [interview with Yann LeCun on whether neural networks can reason](https://www.youtube.com/watch?v=YAfwNEY826I). In short, he thinks so. There are some outstanding questions in this area. For example, how do you structure and represent knowledge in order to support reasoning? How do you deal with the fact that logic-based reasoning is very discrete (versus continuous) and our reliance on gradience-based learing?
+Check out this 10-minute [interview with Yann LeCun on whether neural networks can reason]((Zellers et al., 2018)). In short, he thinks so. There are some outstanding questions in this area. For example, how do you structure and represent knowledge in order to support reasoning? How do you deal with the fact that logic-based reasoning is very discrete (versus continuous) and our reliance on gradience-based learing?
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
