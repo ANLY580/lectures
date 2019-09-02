@@ -6,4 +6,4 @@ This directory contains lecture materials for class which can be viewed either d
 
 ## Try out the notebooks!
 
-* [Lecture 1](https://hub-binder.mybinder.ovh/user/anyl580-lectures-yyldvjkb/notebooks/1-overview/1-overview.ipynb)
+* [Lecture 1](https://mybinder.org/v2/gh/anyl580/lectures/master?urlpath=notebooks/1-overview/1-overview.ipynb)
