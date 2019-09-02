@@ -7,5 +7,3 @@ jupyter nbextension enable python-markdown/main
 
 python -m cite2c.install
 python -m nltk.downloader brown
-
-jupyter trust 1-overview/1-overview.ipynb
