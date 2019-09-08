@@ -28,7 +28,6 @@ jupyter:
 - [Syllabus](https://georgetown.instructure.com/courses/81464/assignments/syllabus) on Canvas
 - [Course GitHub repository](https://anyl580.github.io)
 - Assignments
-- Scientific Paper
 - Rubrics
 - Readings
 <!-- #endregion -->
@@ -182,7 +181,7 @@ Example, "He saw the girl with the telescope.""
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-Image credit: Christopher Manning 2017. 
+Image credit: Christopher Manning 2017.
 
 For more about this talk, visit https://simons.berkeley.edu/talks/christopher-manning-2017-3-27 or watch directly in YouTube at https://youtu.be/nFCxTtBqF5U.
 
@@ -269,7 +268,7 @@ The study of language is a huge field. Language is often the best view into thou
 Linguistics is an empirical tradition and is driven by observation. Linguists strive to find patterns in language use, not to explain behavior as a psychologist might, but to better understand how we think and communicate as a species.
 
 Linguistics is such a broad field, that it is broken into multiple categories as shown below.
-![](..images/scientific-linguists.jpg)
+![](../images/scientific-linguists.jpg)
 
 How does computational linguistics differ from NLP? [Jason Eisner gives an excellent answer on Quora](https://www.quora.com/How-is-computational-linguistics-different-from-natural-language-processing). He makes the distinction in terms of research goals. **Computational linguists** strive to answer questions about language and how humans compute it. NLP practitioners are focused on the engineering side of the house - how do we analyze text to answer questions. **Data scientists**, in particular, care about how they can best answer some sort of "business" question.
 
@@ -347,7 +346,7 @@ Often, if you have little data or time, this is the most productive approach to 
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-# Statistical 
+# Statistical
 ![](../images/statistical-nlp.jpg)
 <!-- #endregion -->
 
@@ -382,10 +381,10 @@ You could characterize data exploration as a part of data engineering. But data 
 So why is “science” in data science so important?
 Much of what you are doing in NLP involves prediction. To produce meaningful results, we use empirical methods to validate the output of algorithms and models, since we can’t always determine validity through direct inspection of every bit of data.
 
-What is empiricism? 
-Emperial knowledge is based on evidence from observation and experimentation. This idea contrasts with the idea that knowledge is based on reason (or argument). 
+What is empiricism?
+Emperial knowledge is based on evidence from observation and experimentation. This idea contrasts with the idea that knowledge is based on reason (or argument).
 
-Noah Smith notes that hand-crafted knowledge sources are an example of information we might use as a resource. And in fact, theories in linguistic are largely driven by rationalist thinking - though informed by evidence from data.  Knowledge from data itself (via text corpora) have come to play a crucial role in the computational analysis of language. Indeed, this empirical manner of thinking drives science and how we as (data) scientists work. 
+Noah Smith notes that hand-crafted knowledge sources are an example of information we might use as a resource. And in fact, theories in linguistic are largely driven by rationalist thinking - though informed by evidence from data.  Knowledge from data itself (via text corpora) have come to play a crucial role in the computational analysis of language. Indeed, this empirical manner of thinking drives science and how we as (data) scientists work.
 
 What is the scientific process you will typically follow when you are assessing data that involves inferencing?
 
@@ -463,7 +462,7 @@ from nltk.corpus import brown
 
 brown_words = brown.words()
 print(len(brown_words))
-      
+
 # Some things to try...
 
 # How large is the total vocabulary?
