@@ -50,7 +50,198 @@ There's little point in my regurgitating the reading -- particularly when Jurafs
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Tools
 - Development tools
-- Industrial tools
+- Industrial tooling
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Development Tools
+- Python vs R
+- Notebooks vs IDEs
+- Cloud options
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+
+We'll walk through some of the links in the supplement for this section.
+
+All of these topics elicit vigorous debate. That said:
+
+**NLP & Programming Languages**
+- Python is great if you are integrating with software developers. And there is a strong tradition of Python and NLP.
+- Prior to Python: Perl, Java, C, Prolog, Lisp, Scheme... were used for NLP. And probably others.
+- R is prevalent in corpus linguistics.
+R provides for robust data processing via the [Tidyverse](https://www.tidyverse.org) and it's data-centric view of the world. Julia Silge wrote a really neat book called ["Tidy Textmining"](https://www.tidytextmining.com) applying these ideas to text analysis.
+
+- In my opinion, you should be proficient in both. In this class, we are neutral with respect to the tools you prefer to use, but there is an emphasis on Python simply because of the APIs and tooling available for integration into software products.
+
+** Notebooks vs IDEs**
+
+You should use both! IDEs are so much better for debugging and for all of tooling that makes you more efficient at coding. **Rstudio** and **PyCharm** are both fantastic.
+
+Notebooks are great environments for exploring data and for sharing your work. Re-usable code you should package in a Python file as a module.
+
+**Cloud**
+
+- For this course, we'll have a variety of options for environments.
+
+- The best options for collaboration is by using GitHub, period. That said, you should be able to work on your laptop,  Azure Notebooks, Google Colaboratory pretty easily.
+- It's possible we'll want to run some models with a GPU. You can still use Google Colaboratory or one of the cloud options (if you have an account or feel compfortable setting one up).
+- I often use Docker in Digital Ocean plus my laptop (Juno app on iPad.)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Industrial Tooling
+- Crawlers
+- Extractors
+- Search Appliances
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Why do we need to talk about this?
+
+The vast majority of information created by humans intended to be consumed or understood by humans is textual. Even though we are focused on NLP for the purpose of data science, you as data scientists will need to learn to both use and tune tools around collection, extraction, and search.
+
+I did not include other sorts of useful tools you may use in the workflow around orchestration, ETL, etc. - you may learn more about them in your other classes in this program.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Pipeline
+![](../images/search-1.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Image: The Search Network, Search Insights 2018. p. 9 https://searchexplained.com/product/book-search-insights-2018/
+
+Let's start with a pipeline. As a data scientist, you quickly learn that most of the effort is around tooling and making your data usable. Every step of the way has an impact on what you do and collection is a key part of this.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Crawlers
+- Don't write your own!
+- wget, Nutch, Scrapy (Python)
+- There are some crawled Corpora...
+Common Crawl (WARC, WET and index)
+    - Can subsample based on language id, detected charset, url, etc.
+    - Files truncated at 1MB!
+    - Be careful of anything off the web
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+# Challenges
+- Circular links
+- Redirects
+- Cookies
+- Network failure
+- Site-internal crazy URL
+
+Sleep between requests, consider
+randomizing a user-agent in the http-header, consider adding a "referred from" header, and, of course, respect robots.txt
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Pipeline
+![](../images/search-2.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Image: The Search Network, Search Insights 2018. p. 9 https://searchexpla ined.com/product/ book-search- insights-2018/
+
+Okay, if this is a search pipeline, you crawl... then what? There is a ton missing here!
+<!-- #endregion -->
+
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Extractors
+![](../images/pipeline-tasks.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+You already have a decent intuition now that even tokenization will impact the performance of downstream tasks. What if your documents come from many different types of sources?
+
+Next week, Linda Moreau will talk about what kinds of things can go wrong in text extraction. I'll simply point out a few at a high level.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Challenges
+- PDF
+- Images (OCR...)
+- Proprietary & embedded document formats
+- Exceptions
+- Missing, garbled text
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+- There are lots of examples in Tim Allison's briefing in Canvas (this week), on where content extraction can go wrong. He is a contributor to the Apache Tika program -- and this is a content extractor you may find useful.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Search Appliances (ELK)
+![](../images/elastic.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Image from: https://www.elastic.co/blog/weblyzards-visual-exploration-of-sustainability-communication-with-elasticsearch
+
+The Elastic stack is very useful for enabling users to explore data before a data scientist has sufficient time and understanding to model it.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Data Exploration
+![](../images/kibana-oov.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+This example from Tim Allison shows how a data scientist may use an elastic index with Kibana to visualize content for data exploration. From this, you can dive directly into files to get a closer look.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Search: Inverted Index
+![](../images/inverted-index.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Elastic uses a data structure called an "inverted index" to facilitate search. This is conceptually an easy problem. But if you look closely, you will see there is lots of NLP involved.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Search: Tokenization / Filtering
+![](../images/tokenization-filtering.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+To reduce the size of an index and to improve recall, you can do some work in tokenization to improve search.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Normalizing
+![](../images/normalization-search.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Normalizing has a strong affect on search. Much can go wrong if this is not handled well.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Stemming - sometimes too aggressive
+![](../images/stemming.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Stemming may improve recall, but this is also something that needs to be handled well.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Tokenization / Filtering
+![](../images/case-folding.jpg)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Unicode case-folding may also help to improve search, though the order in which you apply rules for stop word removal, normalization and case-folding will matter when you are working with text across multiple languages. This article provides an accessible explanation in the context of Elastic.
+https://greg.blog/2013/05/01/three-principles-for-multilingal-indexing-in-elasticsearch/
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Context: Tokenization
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -87,7 +278,7 @@ from nltk.corpus import brown
 ```
 
 ```python slideshow={"slide_type": "notes"}
-# In your anaconda distribution, you should be able to use basic unix commands. 
+# In your anaconda distribution, you should be able to use basic unix commands.
 # For example, try the ls command below to make sure this is the case.
 
 !ls
@@ -99,7 +290,7 @@ from nltk.corpus import brown
 ```
 
 ```python slideshow={"slide_type": "notes"}
-# Another way to view this file using standard Python is the following. 
+# Another way to view this file using standard Python is the following.
 # This time, we are only reading some number of chracters.
 # I'm a fan of realpython and if you are uncomfortable with basics in Python, check it out.
 # https://realpython.com/read-write-files-python/
@@ -136,7 +327,7 @@ ca11.vocab()
 # API documentation here: https://www.nltk.org/api/nltk.tokenize.html
 
 # While NLTK gives you some nice capabilities with its included corpora, generally speaking
-# you have to handle tokenization yourself via the use of APIs in tools like SpaCy. Later, 
+# you have to handle tokenization yourself via the use of APIs in tools like SpaCy. Later,
 # when we get to the module where we use SpaCy we'll do some performance comparisons
 # between NLTK and SpaCy for tokenization. But for how, let's use NLTK.
 
@@ -161,7 +352,7 @@ WhitespaceTokenizer().tokenize(ca11_raw)
 #https://www.nltk.org/api/nltk.tokenize.html#nltk.tokenize.regexp.RegexpTokenizer
 from nltk.tokenize import RegexpTokenizer
 
-# From the documentation this is a tokenizer that splits a string using a regular expression, 
+# From the documentation this is a tokenizer that splits a string using a regular expression,
 # which matches either the tokens or the separators between tokens.
 
 # tokenizer = RegexpTokenizer('\w+|\$[\d\.]+|\S+')
@@ -170,7 +361,7 @@ from nltk.tokenize import RegexpTokenizer
 # tokenizers do what you want, but other times you will need to provide additional
 # pre-processing to ensure text is tokenized the way you would like it to be.
 
-# With some help from rexpr, write a regular expression that tokenizes the text, 
+# With some help from rexpr, write a regular expression that tokenizes the text,
 # handling the problems you noted above.
 
 # YOUR SOLUTION HERE
@@ -188,10 +379,10 @@ from nltk.tokenize import RegexpTokenizer
 
 # One of the really neat things about the Brown Corpus (and others like it), are the additional annotations
 # that give you more information about the text and word distributions in it.
-# NLTK includes a probability module with the ability to collect conditional frequency 
+# NLTK includes a probability module with the ability to collect conditional frequency
 # distribution over tokens in text.
 
-# Let's switch to the entire Brown corpus now, and also use the tokenization provided by 
+# Let's switch to the entire Brown corpus now, and also use the tokenization provided by
 # the Text object.
 
 # API documentation here:
@@ -200,15 +391,15 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.probability import ConditionalFreqDist
 from nltk.probability import FreqDist
 
-# From the documentation, A frequency distribution records the number of times 
-# each outcome of an experiment has occurred. For example, a frequency distribution 
+# From the documentation, A frequency distribution records the number of times
+# each outcome of an experiment has occurred. For example, a frequency distribution
 # could be used to record the frequency of each word type in a document.
 
 # fdist = FreqDist(word.lower() for word in word_tokenize(sent))
 
-# Conditional frequency distributions are used to record the number of times each sample 
-# occurred, given the condition under which the experiment was run. 
-# For example, a conditional frequency distribution could be 
+# Conditional frequency distributions are used to record the number of times each sample
+# occurred, given the condition under which the experiment was run.
+# For example, a conditional frequency distribution could be
 # used to record the frequency of each word (type) in a document, given its length.
 
 
@@ -262,7 +453,7 @@ brown.tagged_words()[:10]
 ```python slideshow={"slide_type": "notes"}
 # Exercise 5: Ambiguity in the corpus
 
-# How many ambiguous word types are there? 
+# How many ambiguous word types are there?
 
 # YOUR SOLUTION HERE
 
