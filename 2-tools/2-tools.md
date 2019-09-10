@@ -149,7 +149,6 @@ Image: The Search Network, Search Insights 2018. p. 9 https://searchexpla ined.c
 Okay, if this is a search pipeline, you crawl... then what? There is a ton missing here!
 <!-- #endregion -->
 
-
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Extractors
 ![](../images/pipeline-tasks.jpg)
@@ -213,7 +212,7 @@ To reduce the size of an index and to improve recall, you can do some work in to
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-# Normalizing
+# Normalization
 ![](../images/normalization-search.jpg)
 <!-- #endregion -->
 
@@ -222,12 +221,39 @@ Normalizing has a strong affect on search. Much can go wrong if this is not hand
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Stemming
+- Non-linguistic
+- Designed to improve search
+- [Porter stemmer](https://www.nltk.org/_modules/nltk/stem/porter.html)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+To better understand the concept of stemming, go straight to the source code in this slide and also play around with stemming words from the Brown Corpus.
+
+Note, while stemming is relatively easy in English, some other languages have much more complex morphology and other techniques may be more prevalent than stripping affixes and using simple transformation patterns.
+
+Stemmers are used to group similar words together and have widely been used in information retrieval. But you can also use ngram techniques. We'll talk more about ngrams next week.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Stemming - sometimes too aggressive
 ![](../images/stemming.jpg)
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-Stemming may improve recall, but this is also something that needs to be handled well.
+While stemming may improve recall, it may also results in reduced precision.
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Lemmatization
+- Linguistic
+- Collapses *inflectional* variants
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+- This process involves first determining the part of speech of a word, and then applying normalization rules.
+
+For most applications, lemmatization would not be preferred in information retrieval since it would result in lower recall.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -241,11 +267,43 @@ https://greg.blog/2013/05/01/three-principles-for-multilingal-indexing-in-elasti
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-# Context: Tokenization
+# A Note on Evaluation
+![](../images/recall-precision.png)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Buried in this chapter was a note about recall and precision. This visual depiction gives a clear way to see what is meant.
+
+Along with measures of similarity such as edit distance, we'll talk quite a bit about how to use recall and precision for evaluating performance in a variety of NLP tasks.
+
+For the purposes of tokenization, we can use recall and precision generally to see how well we do when we have ground truth. But there is no linguistically motivated way to determine a single ground truth. (The same may not be said of lemmatization.)
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
+# Type 1 and Type 2 Error
+![](../images/type-1-2.png)
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+I find this image to be helpful in remembering which kind of error is a type 1 (false positive) error versus type 2 (false negative) error!
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
 # Hands-on: Tokenization
+<!-- #endregion -->
+
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+While we're largely ignoring punctuation for calculating statistics below, I want to make the cautionary note that punctuation can be quite important information and especially for tokenization when we are building a pipeline for higher levels of analysis.
+
+J&M give the fine example of a quote mark which may distinguish the difference between a genitive (possessive) marker, clitic, and quotative as in:
+
+> "the book's over in the containers' above"
+
+J&M similarly mentions the potential value of of capitalization for a number of interesting cases. For example, recall the difference between:
+
+> us and US
+
+Thus, the Brown Corpus that we're using includes punctuation and a wide range of tags for distinguishing word forms.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
@@ -253,7 +311,7 @@ For the remainder of this session, walk through the material here and in the sup
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": "notes"}
-# If you are not working in binder, uncomment any import statements in the blocks below.
+# If you are working in binder, you can comment any import statements in the blocks below.
 
 import nltk
 ```
@@ -263,14 +321,13 @@ You'll need also to have the brown corpus (or any others that interest you). Aga
 
 **python -m nltk.downloader brown**
 
-We've also included versions of the tagged and untagged brown corpora in Canvas and in the lectures repository. When you git clone the repo (https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop),you will get copies of these. If you are working in R, you may need to do this.
+We've also included versions of the tagged and untagged Brown Corpus in Canvas and in the lectures repository. When you git clone the repo (https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop),you will get copies of these. If you are working in R, you may need to do this.
 
 Also in the repo are two individual files from the brown corpus. If you are new to Python, you also need to learn how to load files not included in libraries. These will give you an opportunity to do so.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Hopefully, you've already browsed through chapters 1 & 2 in NLTK. We'll be working from material in **chapter 3** this week and again in the fourth session of this class when we begin to learn about language modeling.
-
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": "notes"}
@@ -346,7 +403,7 @@ WhitespaceTokenizer().tokenize(ca11_raw)
 # What do you see that looks like a problem?
 ```
 
-```python slideshow={"slide_type": "slide"}
+```python slideshow={"slide_type": "notes"}
 # Exercise 2: Regular expression tokenization
 
 #https://www.nltk.org/api/nltk.tokenize.html#nltk.tokenize.regexp.RegexpTokenizer
