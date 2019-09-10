@@ -369,7 +369,14 @@ brown.sents('ca11')
 # Okay, so let's play with tokenizers on a single file from Brown
 
 from nltk.text import Text
-ca11 = nltk.Text(brown.words(fileids=['ca11']))
+ca11 = Text(brown.words(fileids=['ca11']))
+print(len(ca11))
+# Filter to only words and also normalize the case to lower
+ca11_normalized = [word.lower() for word in ca11 if word.isalpha()]
+
+#How does this change the number of words?
+
+# YOUR SOLUTION
 
 # Note that if you are using the Text object that your text in ca11 is accessible via methods on this object.
 ```
@@ -485,20 +492,6 @@ brown.tagged_words()[:10]
 ```
 
 ```python slideshow={"slide_type": "notes"}
-# Exercise 3: Tagged text (continued)
-
-# Write a function that takes a word and gives you a frequency distribution
-
-# YOUR SOLUTION HERE
-
-
-# Write a function that takes a word and gives you a probability distribution
-
-# YOUR SOLUTION HERE
-
-```
-
-```python slideshow={"slide_type": "notes"}
 # Exercise 4: Ambiguous words
 
 # Find the word which have the greatest variety of tags.
@@ -517,4 +510,12 @@ brown.tagged_words()[:10]
 # What is the percentage of ambiguous words across the entire vocabulary?
 
 # YOUR SOLUTION HERE
+```
+
+```python
+# Exercise 6: Heap's Law
+
+# Someone has largely done the work for you... but go through and plot Heap's curve
+# (types versus tokens) on the Brown corpus.
+# https://github.com/martinapugliese/the-talking-data/blob/master/quantifying-natural-languages/Heaps's%20laws%20different%20languages.ipynb
 ```
