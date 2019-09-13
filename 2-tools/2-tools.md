@@ -1,4 +1,5 @@
-```python slideshow={"slide_type": "skip"}
+<!-- #region {"slideshow": {"slide_type": "skip"}} -->
+ 
 ---
 jupyter:
   jupytext:
@@ -15,7 +16,7 @@ jupyter:
     language: python
     name: python3
 ---
-```
+<!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 *ANLY 580: Natural Language Processing for Data Analytics* <br>
@@ -376,7 +377,7 @@ ca11_normalized = [word.lower() for word in ca11 if word.isalpha()]
 
 #How does this change the number of words?
 
-# YOUR SOLUTION
+print(len(ca11_normalized))
 
 # Note that if you are using the Text object that your text in ca11 is accessible via methods on this object.
 ```
@@ -405,9 +406,21 @@ WhitespaceTokenizer().tokenize(ca11_raw)
 
 # How many tokens are there?
 
-# YOUR SOLUTION HERE
+whitespace_tokens = WhitespaceTokenizer().tokenize(ca11_raw)
+len(whitespace_tokens)
 
 # What do you see that looks like a problem?
+
+# Some ideas...
+# --The Dashes
+#  "A's" Python treated the quote marks as Python
+# hits. 
+# Cipriani's 
+# 6-foot-3-inch Unsure if some hyphenated token sequences should be considered a "word"
+# 2-and-2 (same as above)
+# Upper and lower case words (e.g., "The" and "the")
+# 'physically",',
+# The text has unexpected inconsistencies or errors...
 ```
 
 ```python slideshow={"slide_type": "notes"}
@@ -428,13 +441,19 @@ from nltk.tokenize import RegexpTokenizer
 # With some help from rexpr, write a regular expression that tokenizes the text,
 # handling the problems you noted above.
 
-# YOUR SOLUTION HERE
+# TODO: Get RegExr pattern and post link
 
-# How many tokens are there?
+tokenizer = RegexpTokenizer('[A-Za-z\.]*-?\'?[A-Za-z]+\'?|\$?[0-9]+[,-\.]?[0-9]|[0-9]')
+my_ca11_tokens = tokenizer.tokenize(ca11_raw)
+tokenizer = RegexpTokenizer('')
 
-# YOUR SOLUTION HERE
-
+my_ca11_normalized = [word.lower() for word in my_ca11_tokens]
+print(my_ca11_normalized)
 # Could you fix everything you noted was wrong from the Whitespace tokenizer?
+
+# No. '-The' for example. You may be able to still correct this in the given regex, 
+# but likely you would need cascading regular expressions to catch more across 
+# other additional samples from the corpus.
 
 ```
 
@@ -472,23 +491,48 @@ from nltk.probability import FreqDist
 ```python slideshow={"slide_type": "notes"}
 # Exercise 3: Tagged text (continued)
 
-# What we'd like to do now is look at combinations of word types and tags in the Brown Corpus.
+# What we'd like to do now is look at combinations of word types and tags 
+# in the Brown Corpus.
 
 freq_dist = FreqDist()
 cond_freq_dist = ConditionalFreqDist()
 
-# Tagged words are already in tuples
+# Most common word in the corpus
+for a_word in brown.words():
+    a_word.lower()
+    freq_dist[a_word] += 1
+
+# What is the most common word?
+word_dist = freq_dist.max()
+
+# Tagged words are in tuples
 brown.tagged_words()[:10]
+
 ```
 
 ```python
 # Given a word, list the possible tags for that word with its frequency count.
 
 # Example: a particular word should generate a list like [('nn', 12), ('vb', 22)]
-# Then you might need to sort and reverse a list of tuples
-# such as word_freq = [(y,x) for (x,y) in freq_word]
 
-# YOUR SOLUTION HERE
+word = "get"
+
+# You can use ConditionalFreqDist() for conditional frequencies of words and tags.
+
+for (_,word) in brown.tagged_words():
+    word.lower()
+    cond_freq_dist[_][word] += 1
+    
+cond_freq_dist["get"]
+# This outputs a dictionary on which you can perform other operations.
+
+for k, v in cond_freq_dist["get"].items():
+    print(k, v)
+
+# That said, it turns out NLTK now has an easy way to list the possible tags
+# for a word along with its frequency count.
+
+cond_freq_dist["get"].tabulate()
 ```
 
 ```python slideshow={"slide_type": "notes"}
@@ -496,20 +540,69 @@ brown.tagged_words()[:10]
 
 # Find the word which have the greatest variety of tags.
 
-# YOUR SOLUTION HERE
+# Find the word which has the greatest variety of tags.
 
+
+max_tags_count = -1
+max_tags_word = ''
+
+for word in cond_freq_dist.conditions():
+    word.lower()
+    if cond_freq_dist[word].B() > max_tags_count:
+        max_tags_count = cond_freq_dist[word].B()
+        max_tags_word = word
+        
+print(max_tags_count)
+print(max_tags_word)
 ```
 
 ```python slideshow={"slide_type": "notes"}
 # Exercise 5: Ambiguity in the corpus
 
 # How many ambiguous word types are there?
+# This boils down to 'how may words types have more than one tag'?
 
-# YOUR SOLUTION HERE
+# Here, conditions are word types
+
+ambiguous_words = 0
+for type in cond_freq_dist.conditions():
+    if len(list(cond_freq_dist[type])) > 1:
+        ambiguous_words = ambiguous_words + 1
 
 # What is the percentage of ambiguous words across the entire vocabulary?
 
-# YOUR SOLUTION HERE
+(100.0 * ambiguous_words / len(list(freq_dist.keys())) )
+```
+
+```python
+%matplotlib inline
+from matplotlib import pyplot as plt
+```
+
+```python
+# Taken directly from
+# https://github.com/martinapugliese/the-talking-data/blob/master/quantifying-natural-languages/Heaps's%20laws%20different%20languages.ipynb
+
+def separate_tokens_types(words):
+
+    """
+    Given a list of words from a corpus, separate the counts of tokens and
+    types in time. Return the two lists.
+    """
+
+    t_d = {}
+    tokens, types = [], []
+    count = 0
+    for i in range(len(words)):
+
+        if words[i] not in t_d:
+            count += 1
+            t_d[words[i]] = 1
+
+        tokens.append(i + 1)
+        types.append(count)
+
+    return tokens, types
 ```
 
 ```python
@@ -518,4 +611,22 @@ brown.tagged_words()[:10]
 # Someone has largely done the work for you... but go through and plot Heap's curve
 # (types versus tokens) on the Brown corpus.
 # https://github.com/martinapugliese/the-talking-data/blob/master/quantifying-natural-languages/Heaps's%20laws%20different%20languages.ipynb
+
+brown_words = [word.lower() for word in brown.words() if word.isalpha()]
+brown_t_tokens, brown_t_types = separate_tokens_types(brown_words)
+
+# Plot the Heaps' curves, linear scale
+
+plt.plot(brown_t_tokens, brown_t_types, label='Brown')
+
+plt.grid()
+plt.legend()
+plt.title("Heaps' laws NLTK corpora")
+plt.xlabel('Num tokens')
+plt.ylabel('Num types')
+plt.show()
+```
+
+```python
+
 ```
