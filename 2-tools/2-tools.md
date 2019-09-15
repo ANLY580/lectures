@@ -443,17 +443,16 @@ from nltk.tokenize import RegexpTokenizer
 
 # This is a slightly better way to create such a long regular expression.
 
-pattern = r'''(?x)     # set flag to allow verbose regexps**
+pattern1 = r'''(?x)     # set flag to allow verbose regexps**
      (?:[A-Z]\.)+       # abbreviations, e.g. U.S.A.
      | \w+(?:-\w+)*       # words with optional internal hyphens
      | \$?\d+(?:\.\d+)?%? # currency and percentages, e.g. $12.40, 82%
 '''
 
 pattern2 = r'''(?x)
-      (?:[A-Z]\.)+ 
-      | \w+(?:-\w+)*
-      | \$?[0-9]+[,-\.]?[0-9]
-      | [0-9]
+      (?:[A-Z]\.)+     # abbreviations, e.g. U.S.A
+      | \w+(?:-\w+)*   # words with internal hyphens
+      | \$?[0-9]+[,-\.]?[0-9]   # currency and percentages e.g., $12.40, 83%
 '''
 
 tokenizer = RegexpTokenizer(pattern2)
