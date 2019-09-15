@@ -441,19 +441,32 @@ from nltk.tokenize import RegexpTokenizer
 # With some help from rexpr, write a regular expression that tokenizes the text,
 # handling the problems you noted above.
 
-# TODO: Get RegExr pattern and post link
+# This is a slightly better way to create such a long regular expression.
 
-tokenizer = RegexpTokenizer('[A-Za-z\.]*-?\'?[A-Za-z]+\'?|\$?[0-9]+[,-\.]?[0-9]|[0-9]')
+pattern = r'''(?x)     # set flag to allow verbose regexps**
+     (?:[A-Z]\.)+       # abbreviations, e.g. U.S.A.
+     | \w+(?:-\w+)*       # words with optional internal hyphens
+     | \$?\d+(?:\.\d+)?%? # currency and percentages, e.g. $12.40, 82%
+'''
+
+pattern2 = r'''(?x)
+      (?:[A-Z]\.)+ 
+      | \w+(?:-\w+)*
+      | \$?[0-9]+[,-\.]?[0-9]
+      | [0-9]
+'''
+
+tokenizer = RegexpTokenizer(pattern2)
 my_ca11_tokens = tokenizer.tokenize(ca11_raw)
-tokenizer = RegexpTokenizer('')
 
 my_ca11_normalized = [word.lower() for word in my_ca11_tokens]
 print(my_ca11_normalized)
 # Could you fix everything you noted was wrong from the Whitespace tokenizer?
 
-# No. '-The' for example. You may be able to still correct this in the given regex, 
-# but likely you would need cascading regular expressions to catch more across 
-# other additional samples from the corpus.
+# Not really. There are inconsistencies even in this text -- and some interesting number formats. 
+# You would need to set up multiple pre-processing steps to get the fidelity you might want.
+#  J. A. W.
+# 2.21.6
 
 ```
 
@@ -581,7 +594,6 @@ from matplotlib import pyplot as plt
 
 ```python
 # Taken directly from
-# https://github.com/martinapugliese/the-talking-data/blob/master/quantifying-natural-languages/Heaps's%20laws%20different%20languages.ipynb
 
 def separate_tokens_types(words):
 
@@ -625,8 +637,4 @@ plt.title("Heaps' laws NLTK corpora")
 plt.xlabel('Num tokens')
 plt.ylabel('Num types')
 plt.show()
-```
-
-```python
-
 ```
