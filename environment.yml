@@ -11,6 +11,11 @@ dependencies:
     - jupyter_nbextensions_configurator
     - pandas
     - nbconvert
+    - regex
     - pip:
         - cite2c
         - nltk
+        - langdetect
+        - chardet
+        - unicodedata
+        - stanfordnlp
