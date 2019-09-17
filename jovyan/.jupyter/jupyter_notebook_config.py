@@ -13,6 +13,9 @@ c.ContentsManager.preferred_jupytext_formats_save = "py:hydrogen"
 # Preserve jupyter magics for Hydrogen
 c.ContentsManager.comment_magics = False
 
+# Run all nodes interactively
+c.InteractiveShell.ast_node_interactivity = "all"
+
 #------------------------------------------------------------------------------
 # Application(SingletonConfigurable) configuration
 #------------------------------------------------------------------------------
