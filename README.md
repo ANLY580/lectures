@@ -8,3 +8,4 @@ This directory contains lecture materials for class which can be viewed either d
 
 * [Lecture 1](https://mybinder.org/v2/gh/anyl580/lectures/master?urlpath=notebooks/1-overview/1-overview.ipynb)
 * [Lecture 2](https://mybinder.org/v2/gh/anyl580/lectures/master?urlpath=notebooks/2-tools/2-tools.ipynb)
+* (https://nbviewer.jupyter.org/github/anyl580/lectures/blob/master/3-multilingual) [![Binder]
