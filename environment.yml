@@ -17,5 +17,4 @@ dependencies:
         - nltk
         - langdetect
         - chardet
-        - unicodedata
         - stanfordnlp
