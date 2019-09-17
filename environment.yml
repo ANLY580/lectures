@@ -18,3 +18,5 @@ dependencies:
         - langdetect
         - chardet
         - stanfordnlp
+        - unicodedata2
+        - pycld
