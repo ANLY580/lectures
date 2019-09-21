@@ -19,3 +19,4 @@ dependencies:
         - chardet
         - stanfordnlp
         - unicodedata2
+        
