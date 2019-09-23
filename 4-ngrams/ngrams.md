@@ -376,6 +376,7 @@ The idea behind MLE is that to compute a particular bigram probability of a word
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
+
 <!-- #endregion -->
 
 
@@ -432,4 +433,6 @@ But we can often get away with N-gram models.
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 # Norvig (9) Evaluating model fit
 <!-- #endregion -->
+```
+
 ```
