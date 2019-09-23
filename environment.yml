@@ -19,4 +19,4 @@ dependencies:
         - chardet
         - stanfordnlp
         - unicodedata2
-        
+        - textstat
