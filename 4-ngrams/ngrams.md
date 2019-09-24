@@ -92,7 +92,7 @@ Expanding out our agenda a bit, but focusing on ngrams:
 
 - Assume a corpus (set of sentences in some language)
 - And a finite vocabulary V
-- So we can produce a probability distribution over a sequence of words
+- For deriving a probability distribution over a sequence of words
 - So that we can do the following:
  - **Predict a sentence**
  - **Predict the next character/word**
@@ -118,7 +118,7 @@ The crux of the problem is the problem that we don't know all the sentences a la
 
 Let's step back for a moment and look at another type of model.[^1]
 
-[^1]: Perhaps, a very simple definition of a model is a mathemantical representation of data that corresponds well enough to some data to be useful for prediction.
+[^1]: Perhaps, a very simple definition of a model is a mathemantical representation of data that fits well enough to training data to be useful for prediction against test data.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
