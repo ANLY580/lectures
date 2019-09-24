@@ -175,7 +175,7 @@ Divide the number of words by the number of sentences.
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": "notes"}
-!pip install textstat
+#!pip install textstat
 import textstat
 
 test_data = (
@@ -488,6 +488,25 @@ If we take seriously the problem that Norvig notes with unknown (or very low pro
 That is, language suffers from a sparse data problem and we need statistical tools to deal with this.
 <!-- #endregion -->
 
+```python slideshow={"slide_type": "slide"}
+# Norvig calculate ngrams just using plain old Python. NLTK makes this easy, as well.
+
+import regex
+import collections
+from nltk.util import ngrams
+
+s = "This is a paragraph about a dog. It's not a very nice paragraph - and it's not even very long."
+
+s = s.lower()
+s = regex.sub(r'[^a-zA-Z0-9\s]', ' ', s)
+tokens = [token for token in s.split(" ") if token != ""]
+bigrams = list(ngrams(tokens, 2))
+bigrams_freq = collections.Counter(bigrams)
+print(bigrams_freq)
+
+# Note... Sentence boundaries were not retained here.
+```
+
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # MLE
 ![](../images/trigram-mle.png)
@@ -496,11 +515,16 @@ That is, language suffers from a sparse data problem and we need statistical too
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Maximum Likelihood Estimation is meant as a method of estimating the parameters of a probability distribution by maximizing a likelihood function. The whole idea is to generate a statistical model that best fits observed data.
+
+For language data, we can start with counts and then normalizing between 0-1.
+
+
+The idea behind MLE (for the case of a bigram but extending to higher order grams) is that to compute a particular bigram probability of a word y given a previous word x, **you can determine the count of the bigram C(xy) and normalize it by the sum of all the bigrams that share the same first-word x.**
+
 In the trigram context, we'd like a distribution over possible words conditioned on the bigram context.
 
-The idea behind MLE is that to compute a particular bigram probability of a word y given a previous word x, **you can determine the count of the bigram C(xy) and normalize it by the sum of all the bigrams that share the same first-word x.**
-
-But this is going to lead to a real problem with many of our counts being close to zero.
+Regardless, this is going to lead to a real problem with many of our counts being close to zero.
 <!-- #endregion -->
 
 
@@ -542,7 +566,7 @@ http://stanford.edu/~risi/tutorials/absolute_ngram_counts.html
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Intuition #2
-- We need to adjust probability mass... can we use *less* context?
+- Information about the number of different contexts a word appears is useful.
 - We can shift to use lower-order ngrams as evidence
  - (Katz) back-off
  - (Kneser-Ney) (absolute) interpolation
@@ -550,6 +574,8 @@ http://stanford.edu/~risi/tutorials/absolute_ngram_counts.html
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
+From J&M "The word glasses seems much more likely to follow here than, say, the word Kong, so we’d like our unigram model to prefer glasses. But in fact it’s Kong that is more common, since Hong Kong is a very frequent word."
+
 For backoff - if we don't find sufficient evidence for trigrams, let's shift the probability mass to use bigrams, and even unigrams.
 
 According to the Chen &amp; Goodman paper, Katz performs better on large training sets and with n-grams with large counts.
@@ -558,7 +584,7 @@ Overall, the factor with the largest influence is the use of a modified backoff 
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-# Intuition #3
+# What we've learned in evaluation
 
 - Ngram models are sensitive to:
  - vocabulary (training data size)
@@ -568,7 +594,7 @@ Overall, the factor with the largest influence is the use of a modified backoff 
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-If you don't have a data sparcity problem -- you don't have enough data.
+If you don't have a data sparcity problem -- you probably don't have enough data.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
