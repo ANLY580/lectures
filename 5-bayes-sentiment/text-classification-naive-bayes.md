@@ -402,7 +402,9 @@ We're just going to multiply each of these conditional probabilities without wor
 ![](../images/bayes-rule6.png)
 <!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
 We're going to say that the best class by NB, is the one where the probability of the class is multiplied by the sum of the conditional probabilities of each feature.
+<!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Naive Bayes and Text
@@ -636,7 +638,8 @@ Slide from J&M
 - You have to try to do better than:
  - the baseline naive bayes that I provided
  - the baseline macroaverage score of .33 for any category
-- Add the macro-average score
+ - and after gold data I provided
+- Calculte the macro-average score
 - Generate an output file for your INPUT (test file) that has two columns: id, label
 - Submit your report and output file
 <!-- #endregion -->
