@@ -7,4 +7,4 @@ jupyter nbextension enable python-markdown/main
 
 python -m cite2c.install
 python -m nltk.downloader brown
-python -m nltk.downloader vader
+#python -m nltk.downloader vader
