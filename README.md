@@ -11,3 +11,4 @@ This directory contains lecture materials for class which can be viewed either d
 * [Lecture 3](https://mybinder.org/v2/gh/anyl580/lectures/master?urlpath=notebooks/3-multilingual)
 * [Lecture 4](https://mybinder.org/v2/gh/anyl580/lectures/master?urlpath=notebooks/4-ngrams/ngrams.ipynb)
 * [Lecture 5](https://mybinder.org/v2/gh/anyl580/lectures/master?urlpath=notebooks/5-bayes-sentiment/text-classification-naive-bayes.ipynb)
+* [Lecture 6](https://mybinder.org/v2/gh/anyl580/lectures/master?urlpath=notebooks/6-Logistic-Regression/	sentiment_scikitlearn_NB_LogReg.ipynb)
