@@ -74,6 +74,7 @@ for sentence in sentences:
 
 # %%
 # Other things you can do from nltk:
+%matplotlib
 nltk.sentiment.util.demo_liu_hu_lexicon("The plot was good, but the characters are uncompelling and the dialog is not great.", plot=True)
 
 # %%
