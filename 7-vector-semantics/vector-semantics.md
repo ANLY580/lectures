@@ -25,6 +25,16 @@ from IPython.display import HTML
 # **Lecture 6: Vector Semantics**
 <!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Logistics
+
+- Finished heavy reading and moving more to APIs and concepts
+- Project #1 grades
+- Reading next week... minimal. Play with Gensim and learn about basic concepts. 
+- Project #2 proposals https://georgetown.instructure.com/courses/81464/assignments/231998
+- Mid-Term 70% from question banks of previous quizzes and 30% how and why questions
+<!-- #endregion -->
+
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Topics
 
@@ -84,6 +94,7 @@ The organizers of semeval 2017 released four gold data sets with the understandi
 That said, it's important that all data sets represent a common distribution. Errors in setting up evaluations have happened and will no doubt happen in the future. The statistical analyses you run to examine distributional properties of your data are important!
 <!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Links to resources
 
 - Task page: http://alt.qcri.org/semeval2017/task4/index.php?id=data-and-tools
@@ -98,6 +109,7 @@ That said, it's important that all data sets represent a common distribution. Er
  For both English and Arabic.
  
  You competed in Task 4A!
+<!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # How did the teams do?
@@ -149,12 +161,12 @@ Section 1:
 Section 2:
 - Group Name Taken **.584**
 - <font color = "red">404 not found</font> **.576**
-- The Word Nerd **.568**
+- The World Nerd **.568**
 - NLP #1 **.564**
 - I.O.S. **.560**
 - Hotdog **.542**
 - <font color = "red">Asian Fusion 66</font> **.507**
-- TPS **.499
+- TPS **.499**
 - Be Better **.379**
 - Sailor Moon **.349**
 
@@ -693,14 +705,14 @@ The multinominal logistic classifier uses a **generalization of the sigmoid**, c
 HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/o6HrH2EMD-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
 ```
 
-```python slideshow={"slide_type": "slide"}
+<!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # 3. Objective function for learning (cross entropy loss)
 
 - The goal is to set <font color=red>parameters</font> weights $w$ and bias $b$
 - We need a cost function to measure how close the current label is to the gold label
  - Cross-entropy loss. Small if close to correct, bigger if the model is confused
  - Log probability so we get a score 0 - 1
-```
+<!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # 4. Algorithm for optimizing the function (stochastic gradient descent)
