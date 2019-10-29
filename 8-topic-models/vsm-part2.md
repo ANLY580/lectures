@@ -122,7 +122,7 @@ From [jmhessel](https://github.com/jmhessel/FightingWords):
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Distributed Word Representations
+# Distributed Word Representations
 ![](../images/word-doc.png)
 <!-- #endregion -->
 
@@ -169,7 +169,7 @@ This dense matrix is derivable from the word-document matrix. Implicit here is c
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-# Other possible designs
+# Other Possible Matrix Patterns
 * word × search query 
 * word × syntactic context 
 * pair × pattern (e.g., *mason*: *stone*, *cuts*) 
@@ -188,14 +188,16 @@ This dense matrix is derivable from the word-document matrix. Implicit here is c
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
- This can seem overwhelming
+ 
+ This can seem overwhelming.
+ https://web.stanford.edu/class/linguist236/materials/ling236-handout-05-09-vsm.pdf
     
 - We've already seen the importance of tokenization, feature selection and labeled data in terms of importance in a matrix design. 
 - You have many more choices for matrices. 
-- You could decide to treat as a document, all of the tweets from a single person.
-- We briefly talked about how direct counts weren't that useful and weighting to amplify certain characteristics is an important aspect of design.
-- Today, we'll talk more on dimensionality reduction to further refine the matrix. Word2vec (and Glove) combines both weighting and dimensionality reduction and we'll look briefly at that.
-- Finally, there will be vector comparisons -- and there are many options.
+ - You could decide to treat as a document, all of the tweets from a single person.
+ - You could use re-weighting to amplify certain characteristics is an important aspect of design
+ - You could use dimensionality reduction to further refine the matrix. Word2vec (and Glove) combines both weighting and dimensionality reduction and we'll look briefly at that.
+ - Finally, there are many options for vector comparisons.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
