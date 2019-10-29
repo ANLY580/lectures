@@ -34,7 +34,7 @@ from IPython.display import HTML
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Where are we now in our study of NLP?
+# Where are we now in our study of NLP?
 
 - Foundations J&M 1-6
 - Naive Bayes (Bag-of-Words)
@@ -245,7 +245,7 @@ For similarity we actually measuring the angles.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Matrix Re-weighting
+# Matrix Re-weighting
 Amplify the important, trustworthy, and unusual; deemphasize the distracting, mundane, quirky, or mistakes
 - The intuition is that we want to move away from raw counts
 - For weighting schemes, assess:
@@ -256,7 +256,7 @@ Amplify the important, trustworthy, and unusual; deemphasize the distracting, mu
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Weighting / Normalization schemes
+# Weighting / Normalization schemes
 - TF-IDF variants
 - Pairwise distance measures  (e.g., PPMI)
 - Recall... these are **sparse representations**
@@ -280,7 +280,7 @@ Amplify the important, trustworthy, and unusual; deemphasize the distracting, mu
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Word2vec
+# Word2vec
 Instead of counting how often two words co-occur,
 - Train a classifier on a binary prediction task: is w likely to be near y?
 - We take the learned classifier weights as embeddings
@@ -301,7 +301,7 @@ This example is from Rozado (2019) Using Word Embeddings to Analyze how Universi
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Word2vec with skipgrams (sgns)
+# Word2vec with skipgrams (sgns)
 1. Treat the target word and a neighboring context word as positive examples. 
 2. Randomly sample other words in the lexicon to get negative samples 
 3. Use logistic regression to train a classifier to distinguish those two cases 
@@ -337,7 +337,7 @@ Then we train a logistic regression classifier iterative over the training set! 
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## NAACL 2019 Tutorial on measuring and modeling change
+# NAACL 2019 Tutorial on measuring and modeling change
 ![](../images/lang-change1.png)
 ![](../images/lang-change2.png)
 ![](../images/lang-change3.png)
@@ -351,7 +351,7 @@ From the [2019 NAACL tutorial on Measuring and Modeling Language Change (Jacob E
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Dimensionality Reduction & Topic Modeling
+# Dimensionality Reduction & Topic Modeling
 <!-- #endregion -->
 
 ```python
