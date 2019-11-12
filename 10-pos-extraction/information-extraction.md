@@ -47,6 +47,16 @@ from IPython.display import HTML
 ![](../images/linguistic-abstractions.jpg)
 <!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Linguists tend to think of language processing and NLP in terms of levels of abstraction. This is a fairly typical perspective. 
+
+- When you decode language in your brain, it comes in as sounds and is mapped to phonemes (which are themselves abstractions, though also perceptual entities). 
+- The smallest unit of meaning is a morpheme, and morphemes can be combined into larger structure such as words. 
+- Words are articulated in sequences that align to syntactic structures with properties such as nesting and recursion.
+- Movement of words in a sequence result in meaning change. So the relationship between syntax and semantics is important in NLP. This is our topic today.
+- And, finally meaning is NOT just the sum compositional meaning of words in a sequence, but is enriched by other representations in the world (e.g., the visual world), convention, and how the speaker intends to produce an utterance and have it understood. And we'll talk about this last bit next week.
+<!-- #endregion -->
+
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 # Syntax
 
@@ -80,9 +90,11 @@ The problem with compositionality has to do with knowledge that speaker's and he
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-This representation of "wh-movement" does not express  reality, but is only one of many theories of syntax.
+This representation of "wh-movement" does not express  reality, but is represented here in only one of many theories of syntax.
 
-Linguists study patterns in language and have constructed theories that account for regularities across the world's languages. This diagram depicts a theory of grammar where meaning is expressed at a deep level differently than at the surface.
+Linguists study patterns in language and have constructed theories that account for regularities across the world's languages. 
+
+This syntactic tree is a representation from one theory of grammar where meaning is expressed at a deep level differently than at the surface.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -91,6 +103,10 @@ Linguists study patterns in language and have constructed theories that account 
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Image from Wikipedia: https://en.wikipedia.org/wiki/Subject%E2%80%93verb%E2%80%93object
+
+- If you are curious about questions such as global patterns in phonology and syntax, check out https://wals.info/
+- How many languages are there in the world? https://www.ethnologue.com/guides/how-many-languages
+
 
 There are indeed repeated patterns across languages and for this reason, syntacticians working under Chomskian theories (e.g., generative linguistics) refer to **principles and parameters** of language. Principles are expressed as abstract rules while parameters are functions that are either present or absent.
 
@@ -107,6 +123,8 @@ There are a lot of problems with Chomskyan generative linguistics around ideas o
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
+There are many different theories of syntax or how words are combined to express meaning. These are a few important ones you may hear about.
+
 Both functional grammar and cognitive grammar approach language from a lexical perspective. 
 
 Why am I telling you all of this?
@@ -138,7 +156,7 @@ Closed class - Rarely new words added
 	- Pronouns
 	- Cardinal numbers
 	- Etc.
-- Open class  - Productive (new words often added)
+Open class  - Productive (new words often added)
 	- Nouns
 	- Adjectives
 	- Verbs
@@ -178,10 +196,16 @@ https://spacy.io/api/annotation#pos-tagging
 
 <!-- #endregion -->
 
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
+Parts of speech are determined within a theory of grammar. Thus, there is no absolute set. They are categories, and categories are a slippery construct in theories of language. 
+<!-- #endregion -->
+
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## POS.... use in Data Science?
 
-- Pattern sequences (e.g., in Regex)
+- Pattern sequences (e.g., in Regex). Check out the matcher in SpaCy!
+  - https://spacy.io/usage/rule-based-matching
+  - https://explosion.ai/demos/matcher
 - Filtering (e.g., IR)
 - Features (e.g., NER as we will talk about below)
 <!-- #endregion -->
@@ -192,6 +216,11 @@ https://spacy.io/api/annotation#pos-tagging
 * Keywords
 * Multi-word Expressions
 * Information Extraction
+  - Named Entity Extraction
+    - Co-reference
+    - Entity resolution
+  - Relation Extraction
+  - Event Extraction
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -229,18 +258,18 @@ From: [Automatic keyword extraction from individual documents]( https://pdfs.sem
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-- Builds off the PageRank algorithm - Textrank is a "graph-based ranking algorithm is a way of deciding on the importance of a vertex within a graph,by taking into account global information recursively computed from the entire graph,rather than relying only on local vertex-specific information"
+- Builds off the PageRank algorithm - Textrank is a "graph-based ranking algorithm is a way of deciding on the importance of a vertex within a graph by taking into account global information recursively computed from the entire graph,rather than relying only on local vertex-specific information"
 
 - Mihalcea and Tarau assigned nouns and adjectives as vertices in the graph. Intuitively, verbs, prepositions, and other parts of speech are not generally as important when considering keywords. Verticies are connected by **weighted edges based on co-occurrence, or closeness, scores between words**. If two words appear within a certain number of words from each other in the passage, they are connected in the graph with a higher edge weight the closer they are.
 
 - This algorithm is used for both keyword and sentence extraction
 
-- Tokenize
-- Add syntactic filters
-- Use only unigrams
-- Add to uni-directed, un-weighted graph - edge is added between words that co-occur between a window of n words
-- Each vertex initialized to 1
-- Run modified "pagerank" until convergence (typically 20-30 times; dampening at .85)
+  - Tokenize
+  - Add syntactic filters
+  - Use only unigrams
+  - Add to uni-directed, un-weighted graph - edge is added between words that co-occur between a window of n words
+  - Each vertex initialized to 1
+  - Run modified "pagerank" until convergence (typically 20-30 times; dampening at .85)
 
 Mihalcea & Tarau (2004) - [TextRank:BringingOrderintoTexts](https://www.aclweb.org/anthology/W04-3252.pdf)
 
@@ -299,13 +328,13 @@ https://pypi.org/project/pytextrank/
 *Expressions which are made up of at least 2 words and which can be syntactically and/or semantically idiosyncratic in nature. Moreover, they act as a single unit at some level of linguistic analysis.*
 
 - Lexicalized (act as words)
-  - Fixed (can't be varied); "in short"
+  - Fixed (can't be varied); "in short", "rest assured"
   - Semi-Fixed
     - non-decomposable (can be inflected) - "kick the bucket", "kicked the bucket"
     - compound - "peanut butter"
     - proper name - "San Franciso 49ers", "49ers"
   - Syntactically-Flexible
-    - "call up", "call kim up"
+    - "call up", "call her up"
 - Institutionalized (conventions); "salt and pepper" (hair color)
 <!-- #endregion -->
 
@@ -399,7 +428,13 @@ http://nlpprogress.com/english/named_entity_recognition.html
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## NER... Solved?
 
-![](../images/ner-unsolved.png)
+- State of the art (SOTA) NER systems for English produce near-human performance on standard benchmark tests.
+- But... systems are still difficult to port to new domains and with new labels (not "universal")
+- Test results assume unambiguous categories & labels
+
+Nonetheless, industry considers this a solved problem...
+
+Though, let's talk on a bit about other sorts of referring expressions
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -408,10 +443,10 @@ http://nlpprogress.com/english/named_entity_recognition.html
 ![](../images/referring-expressions.png)
 <!-- #endregion -->
 
-<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Recall that we talk about references in text as mentions and that they refer to some abstract entity not in the text. When a reference refers to a previous mention - we call it an **anaphor**. And when two mentioned refer to the same entity, they are said to be related by **co-reference**.
 
-Co-reference resolution is the task of determining whether two mentions co-refer. Sets of co-referring mentions are often called a co-referene chain.
+Co-reference resolution is the task of determining whether two mentions co-refer. Sets of co-referring mentions are often called a co-reference chain.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -456,7 +491,7 @@ https://huggingface.co/coref/
 HuggingFace medium post: https://medium.com/huggingface/state-of-the-art-neural-coreference-resolution-for-chatbots-3302365dcf30
 
 This doesn't work so well... why not?
-I have two dogs. Shelby is larger than Lily, but Lily runs faster. My big poodle likes to sit in my lap
+- I have two dogs. Shelby is larger than Lily, but Lily runs faster. My big poodle likes to sit in my lap.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
@@ -489,6 +524,9 @@ Data Community DC has a nice tutorial around entity resolution - http://www.data
 
 2. Approach 2: Relations
 **Roger McNamee**, a managing director at **Elevation Partners**,...
+
+- Create a relation variable between pairs of mentions
+- Create a relations mention variable for each mention and connect to the relation variable
 ![](../images/relation-graph.png)
 <!-- #endregion -->
 
@@ -515,7 +553,7 @@ To update an existing model, you will need some training and evaluation data. Yo
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Annotation guidelines
+## Annotation standards and guidelines
 
 https://www.ldc.upenn.edu/sites/www.ldc.upenn.edu/files/english-entities-guidelines-v6.6.pdf
 
@@ -525,7 +563,7 @@ Example:
 
 Names of fictional characters are to be tagged; however, character names used as TV show titles will not be tagged when they refer to the show rather than the character name.
 
-- [Batman] has become a popular icon
+- [**Batman**] has become a popular icon
 - [Adam West] s costume from Batman the TV series 
 
 Names of animals are not to be tagged, as they do not refer to person entities.  The same is true for fictional animals and non-human characters.  These two examples do not yield mentions. 
@@ -591,13 +629,13 @@ https://distill.pub/2016/augmented-rnns/
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
-If you recall from last week, we talked a bit about the idea of a recurrent NN with attention. Recurrent NNs in-and-of themeselves. 
+If you recall from last week, we talked a bit about the idea of a recurrent NN with attention. 
 
 RNNs are not difficult to understand in the context of Machine Translation. The basic idea is that that the next item in a sequence gets as an input hidden states (context weights) from prior states.
 
-The RNN takes an input word vector and hidden state from the prior word and then the decoder essential unrolls this and does the same thing. Where attention comes into play is that the encoder passes ALL the hidden states to the decoder. Then the decoder considers all the hidden states and scores them.
+The RNN takes an input word vector and hidden state from the prior word and then the decoder essential unrolls this and does the same thing. Where attention comes into play is that the encoder passes ALL the hidden states for a sentence to the decoder. Then the decoder considers all the hidden states and scores them.
 
-You read an article from Chris Olah, who also founded the site distill.pub. Let's take a look!
+Last week, you read an article from Chris Olah, who also founded the site distill.pub. Let's take a look!
 
 One of the challenges with this approach are long-distance relations (like co-reference!). In fact, there are no great representations and architectures for this yet... but Transformers do improve performance for this sort of problem.
 <!-- #endregion -->
@@ -625,7 +663,7 @@ This looks super complicated. But let's pull out the major concepts.
 
 - There is still an encoder and decoder, but with N identical layers. (This is 6 in the paper and basically means there are 6 iterations)
 - The three orange boxes are the attention parts. Without them, you have a standard feed-forward NN.
-- Without recurrent or convolutions, the model needs to know something about the position of a word. THis is the positional encoding.
+- Without recurrent or convolutions, the model needs to know something about the position of a word. This is the positional encoding.
 - Mult-head attention basically is a set of matrices. Let's look at them next.
 - The feedforward from the input to the attention module in the output is analogous to attention in the previous seq2seq model.
 <!-- #endregion -->
@@ -654,7 +692,7 @@ Then V is returned as a vector for the whole sentence.
 The paper further refined the self-attention layer by adding a mechanism called “multi-headed” attention. This improves the performance of the attention layer in two ways:
 
 - It expands the model’s ability to focus on different positions. This useful if we’re translating a sentence like “The animal didn’t cross the street because it was too tired”, we would want to know which word “it” refers to.
-- It gives the attention layer multiple “representation subspaces”. As we’ll see next, with multi-headed attention we have not only one, but multiple sets of Query/Key/Value weight matrices (the Transformer uses eight attention heads, so we end up with eight sets for each encoder/decoder).
+- It gives the attention layer multiple “representation subspaces”.With multi-headed attention we have not only one, but multiple sets of Query/Key/Value weight matrices (the Transformer uses eight attention heads, so we end up with eight sets for each encoder/decoder).
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
