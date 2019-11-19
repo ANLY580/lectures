@@ -31,7 +31,7 @@ from IPython.display import HTML
 ![](../images/dialogue.png)
 <!-- #endregion -->
 
-<!-- #region {"slideshow": {"slide_type": "slide"}} -->
+<!-- #region {"slideshow": {"slide_type": "notes"}} -->
 When we talk about NLP in dialogue or conversation, there are a variety of sorts of interaction:
 
 - Support to human-human conversation. This is computer-mediated conversation. Think about a meeting note-taker, moderator, etc.
@@ -395,7 +395,7 @@ But it's easy to see why **system-initiated** dialogue might be preferred in fra
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-# Siri Dialogue
+# More Sophisticated Dialogue
 
 ![](../images/siri-dialogue.png)
 <!-- #endregion -->
@@ -448,7 +448,7 @@ HTML('<iframe width="560" height="315" src="https://www.youtube.com/embed/PY9RQF
 ```
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
-## Evaluation
+# Evaluation
 
 ![](../images/dialogue-evaluation.png)
 <!-- #endregion -->
