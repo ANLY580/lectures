@@ -1,0 +1,458 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BernoulliNB	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^from sklearn.naive_bayes import BernoulliNB$/;"	i
+CoherenceModel	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^from gensim.models import CoherenceModel, HdpModel$/;"	i
+CoherenceModel	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^from gensim.models import CoherenceModel, HdpModel$/;"	i
+Counter	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^from collections import Counter$/;"	i
+Counter	10-pos-extraction/intro-nlp-spacy.py	/^from collections import Counter$/;"	i
+DEV	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^DEV =  PRO'dev.csv'$/;"	v
+DEV	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^DEV = PROC_DIR + 'dev.csv'$/;"	v
+DEV	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^DEV =  PROC_DIR + 'dev.csv'$/;"	v
+DIR	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^DIR = 'data'$/;"	v
+DIR	5-bayes-sentiment/vader.py	/^DIR = 'data\/'$/;"	v
+HdpModel	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^from gensim.models import CoherenceModel, HdpModel$/;"	i
+HdpModel	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^from gensim.models import CoherenceModel, HdpModel$/;"	i
+INCLUDE_TEST	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^INCLUDE_TEST = False  # Set to True to also include the test set, results in longer run times $/;"	v
+INCLUDE_TEST	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^INCLUDE_TEST = False  # Set to True to also include the test set, results in longer run times $/;"	v
+INCLUDE_TRAIN	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^INCLUDE_TRAIN = True  # Include the train set by default$/;"	v
+INCLUDE_TRAIN	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^INCLUDE_TRAIN = True  # Include the train set by default$/;"	v
+MultiLabelBinarizer	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^from sklearn.preprocessing import MultiLabelBinarizer$/;"	i
+NaiveBayesClassifier	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^from nltk.classify import NaiveBayesClassifier$/;"	i
+NaiveBayesClassifier	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^from nltk.classify import NaiveBayesClassifier$/;"	i
+OrderedDict	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^from collections import OrderedDict$/;"	i
+OrderedDict	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^from collections import OrderedDict$/;"	i
+PROC_DIR	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^PROC_DIR = 'data\/'$/;"	v
+PROC_DIR	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^PROC_DIR = '.\/data\/processed\/'$/;"	v
+PROC_DIR	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^PROC_DIR = 'data\/'$/;"	v
+RegexpTokenizer	4-ngrams/.ipynb_checkpoints/ngrams-checkpoint.py	/^from nltk.tokenize import RegexpTokenizer$/;"	i
+RegexpTokenizer	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^from nltk.tokenize import RegexpTokenizer$/;"	i
+STOP_WORDS	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^from spacy.lang.en.stop_words import STOP_WORDS$/;"	i
+STOP_WORDS	10-pos-extraction/intro-nlp-spacy.py	/^from spacy.lang.en.stop_words import STOP_WORDS$/;"	i
+SentimentAnalyzer	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^from nltk.sentiment import SentimentAnalyzer$/;"	i
+SentimentAnalyzer	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^from nltk.sentiment import SentimentAnalyzer$/;"	i
+SentimentIntensityAnalyzer	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^from nltk.sentiment.vader import SentimentIntensityAnalyzer$/;"	i
+SentimentIntensityAnalyzer	5-bayes-sentiment/vader.py	/^from nltk.sentiment.vader import SentimentIntensityAnalyzer$/;"	i
+TEMP_FOLDER	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^TEMP_FOLDER = temp_file_path$/;"	v
+TEMP_FOLDER	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^TEMP_FOLDER = temp_file_path$/;"	v
+TRAIN	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^TRAIN = PROC_DIR + 'train.csv'$/;"	v
+TRAIN	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^TRAIN = PROC_DIR + 'train.csv'$/;"	v
+TRAIN	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^TRAIN = DIR + 'twitter-2016train-A.txt'$/;"	v
+TRAIN	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^TRAIN = PROC_DIR + 'train.csv'$/;"	v
+TRAIN	5-bayes-sentiment/vader.py	/^TRAIN = DIR + 'twitter-2016train-A.txt'$/;"	v
+alpha	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                                alpha = lda_alpha)$/;"	v
+alpha	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                                alpha = lda_alpha)$/;"	v
+analyzer	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^analyzer = SentimentIntensityAnalyzer()$/;"	v
+analyzer	5-bayes-sentiment/vader.py	/^analyzer = SentimentIntensityAnalyzer()$/;"	v
+auto_readability_index	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def auto_readability_index(doc):$/;"	f
+auto_readability_index	10-pos-extraction/intro-nlp-spacy.py	/^def auto_readability_index(doc):$/;"	f
+avg_doc_length	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^avg_doc_length = tweets['doc_length'].mean() $/;"	v
+avg_doc_length	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^avg_doc_length = tweets['doc_length'].mean() $/;"	v
+avg_sentence_length	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def avg_sentence_length(doc):$/;"	f
+avg_sentence_length	10-pos-extraction/intro-nlp-spacy.py	/^def avg_sentence_length(doc):$/;"	f
+big_regex	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^big_regex = ('|').join(patterns)$/;"	v
+big_regex	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^big_regex="|".join(regexes)$/;"	v
+big_regex	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^big_regex = ('|').join(patterns)$/;"	v
+bnbc	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^bnbc = BernoulliNB(binarize=None)$/;"	v
+bow	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    bow = dictionary.doc2bow(parsed_tweets['Tweet'][i])$/;"	v
+bow	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    bow = dictionary.doc2bow(parsed_tweets['Tweet'][i])$/;"	v
+bush_speech	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^bush_speech = get_speech(bush_url)$/;"	v
+bush_speech	10-pos-extraction/intro-nlp-spacy.py	/^bush_speech = get_speech(bush_url)$/;"	v
+bush_url	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^bush_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/bush2008.txt"$/;"	v
+bush_url	10-pos-extraction/intro-nlp-spacy.py	/^bush_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/bush2008.txt"$/;"	v
+by_topic	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^by_topic = sns.countplot(x='LDAtopic', data=parsed_tweets)$/;"	v
+by_topic	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^by_topic = sns.countplot(x='topic', data=tweets)$/;"	v
+by_topic	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^by_topic = sns.countplot(x='LDAtopic', data=parsed_tweets)$/;"	v
+by_topic	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^by_topic = sns.countplot(x='topic', data=tweets)$/;"	v
+classifier	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^classifier = sentiment_analyzer.train(trainer, training_features)$/;"	v
+classifier	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^classifier = sentiment_analyzer.train(trainer, training_features)$/;"	v
+clinton_speech	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^clinton_speech = get_speech(clinton_url)$/;"	v
+clinton_speech	10-pos-extraction/intro-nlp-spacy.py	/^clinton_speech = get_speech(clinton_url)$/;"	v
+clinton_speech_words	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^clinton_speech_words = return_words(doc)$/;"	v
+clinton_speech_words	10-pos-extraction/intro-nlp-spacy.py	/^clinton_speech_words = return_words(doc)$/;"	v
+clinton_url	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^clinton_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/clinton2000.txt"$/;"	v
+clinton_url	10-pos-extraction/intro-nlp-spacy.py	/^clinton_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/clinton2000.txt"$/;"	v
+cm	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    cm = CoherenceModel(model=topic_lda, corpus=corpus, dictionary=dictionary, coherence='u_mass')$/;"	v
+cm	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    cm = CoherenceModel(model=topic_lda, corpus=corpus, dictionary=dictionary, coherence='u_mass')$/;"	v
+coherence_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^coherence_lda = []$/;"	v
+coherence_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^coherence_lda = []$/;"	v
+coleman_liau_index	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def coleman_liau_index(doc, words):$/;"	f
+coleman_liau_index	10-pos-extraction/intro-nlp-spacy.py	/^def coleman_liau_index(doc, words):$/;"	f
+corpora	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^from gensim import corpora, models, similarities$/;"	i
+corpora	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^from gensim import corpora, models, similarities$/;"	i
+corpus	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^corpus = textacy.Corpus('en', txt_speeches)$/;"	v
+corpus	10-pos-extraction/intro-nlp-spacy.py	/^corpus = textacy.Corpus('en', txt_speeches)$/;"	v
+corpus	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^corpus = []$/;"	v
+corpus	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^corpus = [dictionary.doc2bow(text) for text in texts]$/;"	v
+corpus	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^corpus = []$/;"	v
+corpus	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^corpus = [dictionary.doc2bow(text) for text in texts]$/;"	v
+corpus_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    corpus_lda = topic_lda[corpus] # Use the bow corpus$/;"	v
+corpus_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^corpus_lda = lda[corpus] # Use the bow corpus$/;"	v
+corpus_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    corpus_lda = topic_lda[corpus] # Use the bow corpus$/;"	v
+corpus_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^corpus_lda = lda[corpus] # Use the bow corpus$/;"	v
+corpus_tfidf	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^corpus_tfidf = tfidf[corpus]      # step 2 -- use the model to transform vectors$/;"	v
+corpus_tfidf	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^corpus_tfidf = tfidf[corpus]      # step 2 -- use the model to transform vectors$/;"	v
+count_chars	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def count_chars(words):$/;"	f
+count_chars	10-pos-extraction/intro-nlp-spacy.py	/^def count_chars(words):$/;"	f
+counter	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^counter = Counter(words)$/;"	v
+counter	10-pos-extraction/intro-nlp-spacy.py	/^counter = Counter(words)$/;"	v
+custom_stopwords	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^custom_stopwords = [',', '-', '.', '’s', '-', ' ', '(', ')', '--', '---', 'n’t', ';', "'s", "'ve", "  ", "’ve"]$/;"	v
+custom_stopwords	10-pos-extraction/intro-nlp-spacy.py	/^custom_stopwords = [',', '-', '.', '’s', '-', ' ', '(', ')', '--', '---', 'n’t', ';', "'s", "'ve", "  ", "’ve"]$/;"	v
+data	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^    data = file.readlines()$/;"	v
+data	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^    data = file.readlines()$/;"	v
+data_file_path	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^data_file_path = "data\/ANLY580\/data"$/;"	v
+data_file_path	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^data_file_path = "data"$/;"	v
+data_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^data_lda = {i: OrderedDict(lda.show_topic(i,20)) for i in range(total_topics)}$/;"	v
+data_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^data_lda = {i: OrderedDict(lda.show_topic(i,20)) for i in range(total_topics)}$/;"	v
+datafile	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^datafile = os.path.join(data_file_path, "2017_English_final\/GOLD\/Subtasks_BD\/twitter-2016test-BD.txt")$/;"	v
+datafile	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^datafile = os.path.join(data_file_path, "2017_English_final\/GOLD\/Subtasks_BD\/twitter-2016train-BD.txt")$/;"	v
+datafile	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^datafile = os.path.join(data_file_path, "2017_English_final\/GOLD\/Subtasks_BD\/twitter-2016test-BD.txt")$/;"	v
+datafile	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^datafile = os.path.join(data_file_path, "2017_English_final\/GOLD\/Subtasks_BD\/twitter-2016train-BD.txt")$/;"	v
+df2	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^df2 = parsed_tweets.groupby(['LDAtopic', 'sentiment'])['LDAtopic'].count().unstack('sentiment')$/;"	v
+df2	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^df2 = parsed_tweets.groupby(['LDAtopic', 'topic'])['LDAtopic'].count().unstack('topic')$/;"	v
+df2	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^df2 = parsed_tweets.groupby(['LDAtopic', 'sentiment'])['LDAtopic'].count().unstack('sentiment')$/;"	v
+df2	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^df2 = parsed_tweets.groupby(['LDAtopic', 'topic'])['LDAtopic'].count().unstack('topic')$/;"	v
+df_dev	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^df_dev = pd.read_csv(DEV)$/;"	v
+df_dev	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^df_dev = pd.read_csv(DEV)$/;"	v
+df_dev	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^df_dev = pd.read_csv(DEV)$/;"	v
+df_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^df_lda = df_lda.fillna(0).T$/;"	v
+df_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^df_lda = pd.DataFrame(data_lda)$/;"	v
+df_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^df_lda = df_lda.fillna(0).T$/;"	v
+df_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^df_lda = pd.DataFrame(data_lda)$/;"	v
+df_sentiment	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^df_sentiment = tweets.groupby(['topic', 'sentiment'])['topic'].count().unstack('sentiment')$/;"	v
+df_sentiment	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^df_sentiment = tweets.groupby(['topic', 'sentiment'])['topic'].count().unstack('sentiment')$/;"	v
+df_train	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^df_train = pd.DataFrame(df_train,columns=['id','label','text'])$/;"	v
+df_train	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^df_train = pd.read_csv(TRAIN)$/;"	v
+df_train	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^df_train = pd.DataFrame(df_train,columns=['id','label','text'])$/;"	v
+df_train	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^df_train = pd.read_csv(TRAIN)$/;"	v
+df_train	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^df_train = pd.DataFrame(df_train,columns=['id','label','text'])$/;"	v
+df_train	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^df_train = pd.read_csv(TRAIN)$/;"	v
+dictionary	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^dictionary = corpora.Dictionary(texts)$/;"	v
+dictionary	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^dictionary = corpora.Dictionary(texts)$/;"	v
+displacy	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^from spacy import displacy$/;"	i
+displacy	10-pos-extraction/intro-nlp-spacy.py	/^from spacy import displacy$/;"	i
+doc	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^doc = nlp(clinton_speech)$/;"	v
+doc	10-pos-extraction/intro-nlp-spacy.py	/^doc = nlp(clinton_speech)$/;"	v
+doc1	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^doc1 = nlp('There have been many mice and geese surrounding the pond.')$/;"	v
+doc1	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^doc1 = nlp('here are octopi')$/;"	v
+doc1	10-pos-extraction/intro-nlp-spacy.py	/^doc1 = nlp('There have been many mice and geese surrounding the pond.')$/;"	v
+doc1	10-pos-extraction/intro-nlp-spacy.py	/^doc1 = nlp('here are octopi')$/;"	v
+doc_topics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    doc_topics = lda.get_document_topics(bow, minimum_probability = 0.01)$/;"	v
+doc_topics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    doc_topics = lda.get_document_topics(bow, minimum_probability = 0.01)$/;"	v
+dtype	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                     dtype = {'msgid':str, 'topic':str, 'sentiment':str, 'Tweet':str})$/;"	v
+dtype	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                     dtype = {'msgid':str, 'topic':str, 'sentiment':str, 'Tweet':str})$/;"	v
+emoticon_regex	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^emoticon_regex = regex.compile(r'^' + emoticons_str + '$', regex.VERBOSE | regex.IGNORECASE)$/;"	v
+encoding	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                     encoding = 'utf-8', $/;"	v
+encoding	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                     encoding = 'utf-8', $/;"	v
+extensible_tokens	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^extensible_tokens=[]$/;"	v
+fancy_doc	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^fancy_doc = nlp("Regional ontology, clearly defined by Heidegger, equals, if not surpasses, the earlier work of Heidegger's own mentor, Husserl")$/;"	v
+fancy_doc	10-pos-extraction/intro-nlp-spacy.py	/^fancy_doc = nlp("Regional ontology, clearly defined by Heidegger, equals, if not surpasses, the earlier work of Heidegger's own mentor, Husserl")$/;"	v
+fancy_words	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^fancy_words = return_words(fancy_doc)$/;"	v
+fancy_words	10-pos-extraction/intro-nlp-spacy.py	/^fancy_words = return_words(fancy_doc)$/;"	v
+features	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^def features(sentence):$/;"	f
+features	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^features = df_train.iloc[:, 2].values$/;"	v
+features	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^def features(sentence):$/;"	f
+first_sent	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^first_sent = list(doc.sents)[0]$/;"	v
+first_sent	10-pos-extraction/intro-nlp-spacy.py	/^first_sent = list(doc.sents)[0]$/;"	v
+gensim	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import gensim$/;"	i
+gensim	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import pyLDAvis.gensim$/;"	i
+gensim	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import gensim$/;"	i
+gensim	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import pyLDAvis.gensim$/;"	i
+get_lexicon	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def get_lexicon(text, n):$/;"	f
+get_lexicon	10-pos-extraction/intro-nlp-spacy.py	/^def get_lexicon(text, n):$/;"	f
+get_speech	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def get_speech(url):$/;"	f
+get_speech	10-pos-extraction/intro-nlp-spacy.py	/^def get_speech(url):$/;"	f
+get_text	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def get_text(url):$/;"	f
+get_text	10-pos-extraction/intro-nlp-spacy.py	/^def get_text(url):$/;"	f
+hdp_topics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^hdp_topics = hdpmodel.get_topics()$/;"	v
+hdp_topics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^hdp_topics = hdpmodel.get_topics()$/;"	v
+hdpmodel	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^hdpmodel = HdpModel(corpus=corpus, id2word=dictionary)$/;"	v
+hdpmodel	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^hdpmodel = HdpModel(corpus=corpus, id2word=dictionary)$/;"	v
+hdptopics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^hdptopics = hdpmodel.show_topics(num_topics = 20, formatted=True)$/;"	v
+hdptopics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^hdptopics = hdpmodel.show_topics(num_topics = 20, formatted=True)$/;"	v
+header	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                     header = None,$/;"	v
+header	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                     header = None,$/;"	v
+human_sentiment	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^human_sentiment = list(set(parsed_tweets['sentiment'].tolist()))$/;"	v
+human_sentiment	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^human_sentiment = list(set(tweets['sentiment'].tolist()))$/;"	v
+human_sentiment	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^human_sentiment = list(set(parsed_tweets['sentiment'].tolist()))$/;"	v
+human_sentiment	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^human_sentiment = list(set(tweets['sentiment'].tolist()))$/;"	v
+human_topics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^human_topics = list(set(tweets['topic'].tolist()))$/;"	v
+human_topics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^human_topics = list(set(tweets['topic'].tolist()))$/;"	v
+id2word	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                                id2word = dictionary,$/;"	v
+id2word	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                                id2word = dictionary,$/;"	v
+index	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                         index = topic_count_lda)$/;"	v
+index	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                         index = topic_count_lda)$/;"	v
+index_col	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                     index_col = False,$/;"	v
+index_col	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                     index_col = False,$/;"	v
+input	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^input = "🥰 Hey!  @sima #roadtrip from 09\/09-9\/27, aren't you in dude :-D  ?!"$/;"	v
+input	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^input = "🥰 Hey!  @sima #roadtrip from 09\/09-9\/27, aren't you in dude :-D  ?!"$/;"	v
+iterations	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                                iterations = 1000,$/;"	v
+iterations	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                                iterations = 1000,$/;"	v
+labels	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^labels = df_train.iloc[:, 1].values$/;"	v
+lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^lda = models.LdaModel(corpus, id2word = dictionary, num_topics = total_topics, iterations = 1000, alpha=lda_alpha)$/;"	v
+lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^lda = models.LdaModel(corpus, id2word = dictionary, num_topics = total_topics, iterations = 1000, alpha=lda_alpha)$/;"	v
+lda_alpha	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^lda_alpha = 'auto' #learns asymmetic prior from the corpus$/;"	v
+lda_alpha	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^lda_alpha = 'symmetric'$/;"	v
+lda_alpha	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^lda_alpha = 'auto' #learns asymmetic prior from the corpus$/;"	v
+lda_alpha	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^lda_alpha = 'symmetric'$/;"	v
+letters_per_100	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def letters_per_100(words):$/;"	f
+letters_per_100	10-pos-extraction/intro-nlp-spacy.py	/^def letters_per_100(words):$/;"	f
+lexical_richness	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def lexical_richness(doc):$/;"	f
+lexical_richness	10-pos-extraction/intro-nlp-spacy.py	/^def lexical_richness(doc):$/;"	f
+lines	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^lines = topics_lda.plot.line(subplots = True)$/;"	v
+lines	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^lines = topics_lda.plot.line(subplots = True)$/;"	v
+list1	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^list1 = ['RT','rt', '&amp;', 'im', 'b4', 'yr', 'nd', 'rd', 'oh', "can't", "he's", "i'll",$/;"	v
+list1	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^list1 = ['RT','rt', '&amp;', 'im', 'b4', 'yr', 'nd', 'rd', 'oh', "can't", "he's", "i'll",$/;"	v
+matplotlib	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import matplotlib.pyplot as plt$/;"	i
+max_doc_length	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^max_doc_length = tweets['doc_length'].max()$/;"	v
+max_doc_length	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^max_doc_length = tweets['doc_length'].max()$/;"	v
+max_to_show	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^max_to_show = 20$/;"	v
+max_to_show	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^max_to_show = 20$/;"	v
+median_doc_length	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^median_doc_length = tweets['doc_length'].median()$/;"	v
+median_doc_length	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^median_doc_length = tweets['doc_length'].median()$/;"	v
+min_doc_length	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^min_doc_length = tweets['doc_length'].min()$/;"	v
+min_doc_length	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^min_doc_length = tweets['doc_length'].min()$/;"	v
+models	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^from gensim import corpora, models, similarities$/;"	i
+models	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^from gensim import corpora, models, similarities$/;"	i
+most_common_words	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def most_common_words(doc, n):$/;"	f
+most_common_words	10-pos-extraction/intro-nlp-spacy.py	/^def most_common_words(doc, n):$/;"	f
+my_extensible_tokenize	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^def my_extensible_tokenize(text):$/;"	f
+my_extensible_tokenizer	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^my_extensible_tokenizer = re.compile(big_regex, re.VERBOSE | re.I | re.UNICODE)$/;"	v
+my_lines	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^    my_lines = [next(dataset) for x in range(10)]$/;"	v
+my_lines	5-bayes-sentiment/vader.py	/^    my_lines = [next(dataset) for x in range(10)]$/;"	v
+my_sentence	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^    my_sentence = my_sentence.strip().split('\\t')$/;"	v
+my_sentence	5-bayes-sentiment/vader.py	/^    my_sentence = my_sentence.strip().split('\\t')$/;"	v
+names	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                     names = ['msgid', 'topic', 'sentiment', 'Tweet'], $/;"	v
+names	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                     names = ['msgid', 'topic', 'sentiment', 'Tweet'], $/;"	v
+neg_tweets	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^neg_tweets = df_neg_train['text'].tolist()$/;"	v
+neg_tweets	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^neg_tweets = df_neg_train['text'].tolist()$/;"	v
+negative_featuresets	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^negative_featuresets = [(features(tweet),'negative') for tweet in neg_tweets]$/;"	v
+negative_featuresets	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^negative_featuresets = [(features(tweet),'negative') for tweet in neg_tweets]$/;"	v
+neutral_featuresets	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^neutral_featuresets = [(features(tweet),'neutral') for tweet in neutral_tweets]$/;"	v
+neutral_featuresets	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^neutral_featuresets = [(features(tweet),'neutral') for tweet in neutral_tweets]$/;"	v
+neutral_tweets	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^neutral_tweets = df_neutral_train['text'].tolist()$/;"	v
+neutral_tweets	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^neutral_tweets = df_neutral_train['text'].tolist()$/;"	v
+new_doc	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^new_doc = nlp(sample_sents)$/;"	v
+new_doc	10-pos-extraction/intro-nlp-spacy.py	/^new_doc = nlp(sample_sents)$/;"	v
+next_doc	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^next_doc = nlp(str(next_sent))$/;"	v
+next_doc	10-pos-extraction/intro-nlp-spacy.py	/^next_doc = nlp(str(next_sent))$/;"	v
+next_sent	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^next_sent = list(doc.sents)[3]$/;"	v
+next_sent	10-pos-extraction/intro-nlp-spacy.py	/^next_sent = list(doc.sents)[3]$/;"	v
+nlp	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^nlp = spacy.load('en')$/;"	v
+nlp	10-pos-extraction/intro-nlp-spacy.py	/^nlp = spacy.load('en')$/;"	v
+nltk	4-ngrams/.ipynb_checkpoints/ngrams-checkpoint.py	/^import nltk$/;"	i
+nltk	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^import nltk$/;"	i
+nltk	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^import nltk $/;"	i
+nltk	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^import nltk$/;"	i
+nltk	5-bayes-sentiment/vader.py	/^import nltk$/;"	i
+nltk_casual_tokens	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^nltk_casual_tokens=[]$/;"	v
+nltk_casual_tokens	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^nltk_casual_tokens=[]$/;"	v
+np	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^import numpy as np $/;"	i
+np	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import numpy as np$/;"	i
+np	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import numpy as np$/;"	i
+num_topics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                                num_topics = total_topics,$/;"	v
+num_topics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                                num_topics = total_topics,$/;"	v
+obama_clean_speech	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^obama_clean_speech = obama_speech.replace("(Applause.)", "")$/;"	v
+obama_clean_speech	10-pos-extraction/intro-nlp-spacy.py	/^obama_clean_speech = obama_speech.replace("(Applause.)", "")$/;"	v
+obama_speech	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^obama_speech = get_speech(obama_url)$/;"	v
+obama_speech	10-pos-extraction/intro-nlp-spacy.py	/^obama_speech = get_speech(obama_url)$/;"	v
+obama_url	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^obama_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/obama2016.txt"$/;"	v
+obama_url	10-pos-extraction/intro-nlp-spacy.py	/^obama_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/obama2016.txt"$/;"	v
+onehot_enc	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^onehot_enc = MultiLabelBinarizer()$/;"	v
+options	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^options = {"compact": True, 'bg': '#09a3d5',$/;"	v
+options	10-pos-extraction/intro-nlp-spacy.py	/^options = {"compact": True, 'bg': '#09a3d5',$/;"	v
+os	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import os$/;"	i
+os	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import os$/;"	i
+outliers	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^outliers = tweets_filtered['Tweet'].tolist()$/;"	v
+outliers	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^outliers = tweets_filtered['Tweet'].tolist()$/;"	v
+parsed_tweets	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^parsed_tweets = tweets.filter(['msgid', 'topic', 'sentiment'], axis =1)$/;"	v
+parsed_tweets	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^parsed_tweets = tweets.filter(['msgid', 'topic', 'sentiment'], axis =1)$/;"	v
+patterns	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^patterns = [$/;"	v
+patterns	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^patterns = [$/;"	v
+pd	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^import pandas as pd$/;"	i
+pd	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^import pandas as pd $/;"	i
+pd	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^import pandas as pd$/;"	i
+pd	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^import pandas as pd$/;"	i
+pd	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^import pandas as pd$/;"	i
+pd	5-bayes-sentiment/vader.py	/^import pandas as pd$/;"	i
+pd	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import pandas as pd$/;"	i
+pd	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import pandas as pd$/;"	i
+perplexity_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^perplexity_lda = []$/;"	v
+perplexity_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^perplexity_lda = []$/;"	v
+plot_size	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^plot_size = plt.rcParams["figure.figsize"] $/;"	v
+plt	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import matplotlib.pyplot as plt$/;"	i
+pos_tweets	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^pos_tweets = df_pos_train['text'].tolist()$/;"	v
+pos_tweets	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^pos_tweets = df_pos_train['text'].tolist()$/;"	v
+positive_featuresets	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^positive_featuresets = [(features(tweet),'positive') for tweet in pos_tweets]$/;"	v
+positive_featuresets	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^positive_featuresets = [(features(tweet),'positive') for tweet in pos_tweets]$/;"	v
+pprint	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import pprint$/;"	i
+pprint	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import pprint$/;"	i
+probs	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^probs = []$/;"	v
+probs	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^probs = []$/;"	v
+processed_feature	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^    processed_feature = processed_feature.lower()$/;"	v
+processed_feature	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^    processed_feature = re.sub(r'\\W', ' ', str(features[sentence]))$/;"	v
+processed_feature	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^    processed_feature = re.sub(r'\\^[a-zA-Z]\\s+', ' ', processed_feature) $/;"	v
+processed_feature	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^    processed_feature = re.sub(r'\\s+', ' ', processed_feature, flags=re.I)$/;"	v
+processed_feature	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^    processed_feature = re.sub(r'^b\\s+', '', processed_feature)$/;"	v
+processed_feature	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^    processed_feature= re.sub(r'\\s+[a-zA-Z]\\s+', ' ', processed_feature)$/;"	v
+processed_features	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^processed_features = []$/;"	v
+punctuation	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^punctuation = list(string.punctuation)$/;"	v
+pyLDAvis	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import pyLDAvis.gensim$/;"	i
+pyLDAvis	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import pyLDAvis.gensim$/;"	i
+python.pythonPath	.vscode/settings.json	/^    "python.pythonPath": "\/Users\/lisa\/anaconda3\/bin\/python"$/;"	f
+re	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^import re$/;"	i
+re	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import re$/;"	i
+re	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import re$/;"	i
+regex	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^import regex$/;"	i
+regex	4-ngrams/.ipynb_checkpoints/ngrams-checkpoint.py	/^import regex$/;"	i
+regex	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^import regex$/;"	i
+regex_str	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^regex_str = [$/;"	v
+regexes	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^regexes=(r"(?:@[\\w_]+)",$/;"	v
+requests	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^import requests$/;"	i
+requests	10-pos-extraction/intro-nlp-spacy.py	/^import requests$/;"	i
+return_words	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def return_words(doc):$/;"	f
+return_words	10-pos-extraction/intro-nlp-spacy.py	/^def return_words(doc):$/;"	f
+sample_sents	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^sample_sents = "One fish, two fish, red fish, blue fish. One is less than two."$/;"	v
+sample_sents	10-pos-extraction/intro-nlp-spacy.py	/^sample_sents = "One fish, two fish, red fish, blue fish. One is less than two."$/;"	v
+score	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^score = bnbc.score(onehot_enc.transform(X_test), y_test)$/;"	v
+se	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^se = pd.Series(texts)$/;"	v
+se	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^se = pd.Series(texts)$/;"	v
+sentences	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^sentences = ["VADER is smart, handsome, and funny.",  # positive sentence example$/;"	v
+sentences	5-bayes-sentiment/vader.py	/^sentences = ["VADER is smart, handsome, and funny.",  # positive sentence example$/;"	v
+sentences_per_100	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^def sentences_per_100(doc, words):$/;"	f
+sentences_per_100	10-pos-extraction/intro-nlp-spacy.py	/^def sentences_per_100(doc, words):$/;"	f
+sentiment_analyzer	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^sentiment_analyzer = SentimentAnalyzer()$/;"	v
+sentiment_analyzer	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^sentiment_analyzer = SentimentAnalyzer()$/;"	v
+sep	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^                     sep = '\\t', $/;"	v
+sep	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^                     sep = '\\t', $/;"	v
+similarities	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^from gensim import corpora, models, similarities$/;"	i
+similarities	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^from gensim import corpora, models, similarities$/;"	i
+single_doc	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^single_doc = nlp(str(first_sent))$/;"	v
+single_doc	10-pos-extraction/intro-nlp-spacy.py	/^single_doc = nlp(str(first_sent))$/;"	v
+sns	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import seaborn as sns$/;"	i
+sns	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import seaborn as sns$/;"	i
+spacy	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^import spacy$/;"	i
+spacy	10-pos-extraction/intro-nlp-spacy.py	/^import spacy$/;"	i
+speeches	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^speeches = {$/;"	v
+speeches	10-pos-extraction/intro-nlp-spacy.py	/^speeches = {$/;"	v
+stats	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^    stats = textacy.text_stats.TextStats(doc)$/;"	v
+stats	10-pos-extraction/intro-nlp-spacy.py	/^    stats = textacy.text_stats.TextStats(doc)$/;"	v
+stoplist	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^stoplist = stopwords.words('english') + list(string.punctuation) + list1$/;"	v
+stoplist	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^stoplist = stopwords.words('english') + list(string.punctuation) + list1$/;"	v
+stopwords	4-ngrams/.ipynb_checkpoints/ngrams-checkpoint.py	/^from nltk.corpus import stopwords$/;"	i
+stopwords	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^from nltk.corpus import stopwords$/;"	i
+stopwords	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^from nltk.corpus import stopwords$/;"	i
+stopwords	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^from nltk.corpus import stopwords$/;"	i
+string	4-ngrams/.ipynb_checkpoints/ngrams-checkpoint.py	/^import string$/;"	i
+string	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^import string$/;"	i
+string	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import string$/;"	i
+string	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import string$/;"	i
+temp_file_path	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^temp_file_path = "data\/ANLY580\/backup"$/;"	v
+temp_file_path	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^temp_file_path = "backup"$/;"	v
+text_feats	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^    text_feats = features(text)$/;"	v
+text_feats	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^    text_feats = features(text)$/;"	v
+text_length	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^text_length = []$/;"	v
+text_length	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^text_length = []$/;"	v
+textacy	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^import textacy$/;"	i
+textacy	10-pos-extraction/intro-nlp-spacy.py	/^import textacy$/;"	i
+texts	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^texts = [[word for word in str(document).lower().split() if word not in stoplist] for document in corpus]$/;"	v
+texts	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^texts = [[word for word in str(document).lower().split() if word not in stoplist] for document in corpus]$/;"	v
+tfidf	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^tfidf = models.TfidfModel(corpus) # step 1 -- initialize a model$/;"	v
+tfidf	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^tfidf = models.TfidfModel(corpus) # step 1 -- initialize a model$/;"	v
+tokenize	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^def tokenize(s):$/;"	f
+tokens	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^tokens = regex.findall(big_regex,input)$/;"	v
+tokens	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^tokens = [term for term in tokens if not term.startswith('#')]$/;"	v
+tokens	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^tokens = [term for term in tokens if not term.startswith('@')]$/;"	v
+tokens	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^tokens = [term for term in tokens if term not in punctuation]$/;"	v
+tokens	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^tokens = [term.lower() for term in tokens if term.lower() not in stopwords.words('english')]$/;"	v
+tokens	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^tokens = nltk.casual_tokenize(input)$/;"	v
+tokens	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^tokens = regex.findall(big_regex,input)$/;"	v
+tokens	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^    tokens = processed_feature.split()$/;"	v
+tokens_regex	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^tokens_regex = regex.compile(r'(' + '|'.join(regex_str) + ')', regex.VERBOSE | regex.IGNORECASE)$/;"	v
+topic_count_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^topic_count_lda = []$/;"	v
+topic_count_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^topic_count_lda = []$/;"	v
+topic_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    topic_lda = models.LdaModel(corpus,$/;"	v
+topic_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    topic_lda = models.LdaModel(corpus,$/;"	v
+topic_mixture	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^topic_mixture = df2[human_sentiment].plot(kind='bar', stacked=True, legend = True)$/;"	v
+topic_mixture	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^topic_mixture = df2[human_topics].plot(kind='bar', stacked=True, legend = False)$/;"	v
+topic_mixture	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^topic_mixture = df_sentiment[human_sentiment].plot(kind='bar', stacked=True, legend = True)$/;"	v
+topic_mixture	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^topic_mixture = df2[human_sentiment].plot(kind='bar', stacked=True, legend = True)$/;"	v
+topic_mixture	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^topic_mixture = df2[human_topics].plot(kind='bar', stacked=True, legend = False)$/;"	v
+topic_mixture	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^topic_mixture = df_sentiment[human_sentiment].plot(kind='bar', stacked=True, legend = True)$/;"	v
+topics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^topics = []$/;"	v
+topics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^topics = []$/;"	v
+topics_lda	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^topics_lda = pd.DataFrame({'perplexity': perplexity_lda,$/;"	v
+topics_lda	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^topics_lda = pd.DataFrame({'perplexity': perplexity_lda,$/;"	v
+topics_sorted	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    topics_sorted = sorted(doc_topics, key = lambda x: x[1], reverse = True)$/;"	v
+topics_sorted	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    topics_sorted = sorted(doc_topics, key = lambda x: x[1], reverse = True)$/;"	v
+total_topics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^total_topics = 20$/;"	v
+total_topics	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^total_topics = len(human_topics)$/;"	v
+total_topics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^total_topics = 20$/;"	v
+total_topics	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^total_topics = len(human_topics)$/;"	v
+train_test_split	5-bayes-sentiment/.ipynb_checkpoints/sentiment_scikitlearn-checkpoint.py	/^from sklearn.model_selection import train_test_split$/;"	i
+trainer	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^trainer = NaiveBayesClassifier.train$/;"	v
+trainer	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^trainer = NaiveBayesClassifier.train$/;"	v
+training_features	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^training_features = positive_featuresets + negative_featuresets + neutral_featuresets$/;"	v
+training_features	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^training_features = positive_featuresets + negative_featuresets + neutral_featuresets$/;"	v
+trump_speech	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^trump_speech = get_speech(trump_url)$/;"	v
+trump_speech	10-pos-extraction/intro-nlp-spacy.py	/^trump_speech = get_speech(trump_url)$/;"	v
+trump_url	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^trump_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/trump.txt"$/;"	v
+trump_url	10-pos-extraction/intro-nlp-spacy.py	/^trump_url = "https:\/\/raw.githubusercontent.com\/sul-cidr\/python_workshops\/master\/data\/trump.txt"$/;"	v
+truth_list	5-bayes-sentiment/.ipynb_checkpoints/sentiment_nltk_naivebayes-checkpoint.py	/^truth_list = list(df_dev[['text', 'label']].itertuples(index=False, name=None))$/;"	v
+truth_list	5-bayes-sentiment/sentiment_nltk_naivebayes.py	/^truth_list = list(df_dev[['text', 'label']].itertuples(index=False, name=None))$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = re.sub(r'--+', ' ', tweet)$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = re.sub(r'[0-9]+', '', tweet)$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = re.sub(r'[0-9]+GB', '', tweet)$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = re.sub(r'\\$[0-9]+', '', tweet)$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = re.sub(r'http\\S+', '', tweet)$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = tweet.replace("&amp;", " ").replace("&gt;", "").replace("&lt;", "")$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = tweet.replace("(", "").replace(")", "").replace(".", "").replace("?", "").replace("!", "").replace(",", "")$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = tweet.replace("\/", " ").replace("=", "").replace('\\"', "").replace('*', '').replace(';', "")$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = tweet.replace(':', '').replace('"', '')$/;"	v
+tweet	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweet = tweets['Tweet'][i]$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = re.sub(r'--+', ' ', tweet)$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = re.sub(r'[0-9]+', '', tweet)$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = re.sub(r'[0-9]+GB', '', tweet)$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = re.sub(r'\\$[0-9]+', '', tweet)$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = re.sub(r'http\\S+', '', tweet)$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = tweet.replace("&amp;", " ").replace("&gt;", "").replace("&lt;", "")$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = tweet.replace("(", "").replace(")", "").replace(".", "").replace("?", "").replace("!", "").replace(",", "")$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = tweet.replace("\/", " ").replace("=", "").replace('\\"', "").replace('*', '').replace(';', "")$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = tweet.replace(':', '').replace('"', '')$/;"	v
+tweet	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweet = tweets['Tweet'][i]$/;"	v
+tweets	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^    tweets=[]$/;"	v
+tweets	4-ngrams/.ipynb_checkpoints/pre-processing-checkpoint.py	/^    tweets=[]$/;"	v
+tweets	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweets = pd.concat([tweets1, tweets2], ignore_index=True)$/;"	v
+tweets	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweets = tweets1$/;"	v
+tweets	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^    tweets = tweets2$/;"	v
+tweets	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweets = pd.concat([tweets1, tweets2], ignore_index=True)$/;"	v
+tweets	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweets = tweets1$/;"	v
+tweets	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^    tweets = tweets2$/;"	v
+tweets1	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^tweets1 = pd.read_csv(datafile, $/;"	v
+tweets1	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^tweets1 = pd.read_csv(datafile, $/;"	v
+tweets2	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^tweets2 = pd.read_csv(datafile, $/;"	v
+tweets2	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^tweets2 = pd.read_csv(datafile, $/;"	v
+tweets_filtered	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^tweets_filtered = tweets[tweets['doc_length'] > 40]$/;"	v
+tweets_filtered	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^tweets_filtered = tweets[tweets['doc_length'] > 40]$/;"	v
+txt_speeches	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^txt_speeches = [clinton_speech, bush_speech, obama_clean_speech, trump_speech]$/;"	v
+txt_speeches	10-pos-extraction/intro-nlp-spacy.py	/^txt_speeches = [clinton_speech, bush_speech, obama_clean_speech, trump_speech]$/;"	v
+vs	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^    vs = analyzer.polarity_scores(sentence)$/;"	v
+vs	5-bayes-sentiment/.ipynb_checkpoints/vader-checkpoint.py	/^    vs = analyzer.polarity_scores(text)$/;"	v
+vs	5-bayes-sentiment/vader.py	/^    vs = analyzer.polarity_scores(sentence)$/;"	v
+vs	5-bayes-sentiment/vader.py	/^    vs = analyzer.polarity_scores(text)$/;"	v
+warnings	8-topic-models/.ipynb_checkpoints/ANLY580_Fall2019_TopicModeling-checkpoint.py	/^import warnings$/;"	i
+warnings	8-topic-models/ANLY580_Fall2019_TopicModeling.py	/^import warnings$/;"	i
+whitespace_tokens	4-ngrams/.ipynb_checkpoints/4-ngrams-checkpoint.py	/^whitespace_tokens=[]$/;"	v
+words	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^    words = return_words(speech)$/;"	v
+words	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^words = [token.text for token in new_doc if token.pos_ is not 'PUNCT']$/;"	v
+words	10-pos-extraction/.ipynb_checkpoints/intro-nlp-spacy-checkpoint.py	/^words = return_words(nlp("Well, I am not 30 years old."))$/;"	v
+words	10-pos-extraction/intro-nlp-spacy.py	/^    words = return_words(speech)$/;"	v
+words	10-pos-extraction/intro-nlp-spacy.py	/^words = [token.text for token in new_doc if token.pos_ is not 'PUNCT']$/;"	v
+words	10-pos-extraction/intro-nlp-spacy.py	/^words = return_words(nlp("Well, I am not 30 years old."))$/;"	v

@@ -350,19 +350,19 @@ Here you can see that there is a claim. And then, when you look at the segments 
 
 This is a sort of textual coherence that is not linguistic, per se.
 
-What is coherence? It is something like meaningful or sense. That is, the sentences you see are communicating an idea and the thoughts that follow expand upon the main thought.
+What is coherence? It is some sort of meaningfulness in a connected conext. That is, the sentences you see are communicating an idea and the thoughts that follow expand upon the main thought.
 
-Coherence inovolves a number of linguistic processes such as tense, referring expressions, world knowledge, etc. But you can also see there are certain cue words that help mark changes between ideas.
+Another view of the idea of coherence is the sense we make of things in the world. We need very little information to build a narrative around an observation. If you observe someone you know stumble, for example, you may quickly imagine an explantion such as "drunk". The behavior is now coherent with respect to some idea.
 
-
+Coherence in language use involves a number of linguistic processes such as tense, referring expressions, world knowledge, etc. But you can also see there are certain cue words that help mark changes between ideas.
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## Discourse Structure
 
-- Structure of the sequence of sentences / utterances (linguistic)
-- Structure of intentions (purpose; note the cue words in the example above)
-- Attentional state (what is in focus? new versus old; e.g., "the man" versus "him")
+- Structure of the **sequence of sentences / utterances** (linguistic)
+- Structure of **intentions** (purpose; note the cue words in the example above)
+- **Attentional state** (what is in focus? new versus old; e.g., "the man" versus "him")
 <!-- #endregion -->
 
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
@@ -537,7 +537,7 @@ https://primer.ai/blog/quicksilver/
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Using Wikipedia text and Wikdata KB:
 
-- Take a seed population fo scientists
+- Take a seed population of scientists
 - Map to their *mentions* in text
 - Use distant supervision to bootstrap models for relation extraction
 - Update KB
@@ -708,7 +708,6 @@ From: https://www.slideshare.net/shuntaroy/a-review-of-deep-contextualized-word-
 ## AllenNLP
 
 - Built on top of PyTorch
-- Data API
 - High level abstractions for working with text
 - Extensible and modular
 - Reference implementations for many tasks
@@ -737,8 +736,8 @@ Sanh, Wolf, and Ruder (2018)
 
 <!-- #region {"slideshow": {"slide_type": "slide"}} -->
 ## What about other sorts of knowledge representation? 
-- Recurrent and hierarchical information seem to work using RNNs and transformers. 
-- Are word representations and with sentence context it?
+- Recursive and hierarchical information - RNNs and transformers are effective! 
+- What else is there beyond word representations with sentence context?
 - What about integrating other forms of knowledge? Commonsense knowledge?
 - This is a fast moving discipline... stay tuned.
 <!-- #endregion -->
@@ -757,5 +756,5 @@ Sanh, Wolf, and Ruder (2018)
 <!-- #region {"slideshow": {"slide_type": "notes"}} -->
 Next up: dialogue
 
-Next week: Bias
+Next week: Bias videos
 <!-- #endregion -->
